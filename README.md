@@ -34,6 +34,14 @@ Mặc định là tiếng Anh. Người xem chuyển bằng nút EN / VI / JA tr
 - `assets/Le-Van-Canh-CV.pdf`: CV để tải về. Thay file mới thì giữ nguyên tên này.
 - `photo/`, `bao-chi/`, `Chứng nhận/`: ảnh và tài liệu gốc, site không dùng trực tiếp. Ảnh chứng nhận đã nén nằm ở `assets/img/cert/`.
 
+## Đang chạy ở đâu
+
+- **GitHub Pages:** https://canhle1993.github.io/canhle-portfolio/ (repo `canhle1993/canhle-portfolio`, nhánh `main`). Mỗi lần push lên `main`, site tự cập nhật sau khoảng 1 phút.
+- **Gắn tên miền `canhle.dev` sau này:**
+  1. Ở nhà cung cấp tên miền, tạo 4 bản ghi `A` cho `@` trỏ về `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`, và bản ghi `CNAME` cho `www` trỏ về `canhle1993.github.io`.
+  2. Trong repo vào Settings > Pages > Custom domain, nhập `canhle.dev`, đợi kiểm tra DNS xong thì bật Enforce HTTPS.
+  3. Các link `canonical`, `og:url`, `og:image` trong `index.html` đã trỏ sẵn tới `https://canhle.dev/`, nên ảnh xem trước khi chia sẻ link sẽ hiện đúng sau khi gắn tên miền.
+
 ## Khi đưa lên server
 
 Chỉ cần đưa `index.html` và thư mục `assets/`. Đừng đưa `photo/` (có bảng điểm scan), `bao-chi/`, `Chứng nhận/`, các thư mục `.backup-*`, `.claude/` và `tai-lieu-tham-khao.rtf`.
