@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lê Văn Cảnh | Java Full-Stack Developer</title>
+    <meta
+      name="description"
+      content="Lê Văn Cảnh, Java Full-Stack Developer in Ho Chi Minh City. Seven years leading a production line at Samsung, ADSE valedictorian at Aptech 2026, 1st place at TechWiz 6 in the IoT Ignite track."
+    />
+    <meta name="theme-color" content="#E3E4EB" />
+    <link rel="canonical" href="https://canhle.dev/" />
+    <link rel="alternate" hreflang="en" href="https://canhle.dev/" />
+    <link rel="alternate" hreflang="vi" href="https://canhle.dev/?lang=vi" />
+    <link rel="alternate" hreflang="ja" href="https://canhle.dev/?lang=ja" />
+    <link rel="alternate" hreflang="x-default" href="https://canhle.dev/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://canhle.dev/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="vi_VN" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta
+      property="og:title"
+      content="Lê Văn Cảnh | Java Full-Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="My goal: grow into a backend engineer who designs systems that scale, are secure and keep running."
+    />
+    <meta property="og:image" content="https://canhle.dev/assets/img/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+    />
+    <link rel="preload" as="image" href="assets/img/avatar-cutout.webp" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lê Văn Cảnh",
+        "jobTitle": "Java Full-Stack Developer",
+        "url": "https://canhle.dev/",
+        "email": "mailto:aplevancanh1993@gmail.com",
+        "sameAs": ["https://github.com/canhle1993"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ho Chi Minh City",
+          "addressCountry": "VN"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!--
+      Hai ngôn ngữ: chữ tiếng Anh viết trực tiếp trong thẻ, tiếng Việt ở data-vi, tiếng Nhật ở data-ja ngay trên thẻ đó.
+      Thuộc tính (alt, aria-label, title, placeholder...) dùng data-vi-alt, data-vi-aria-label...
+    -->
+    <div class="bg" aria-hidden="true">
+      <!-- Nếp gợn như lụa bóng ở nền bên phải -->
+      <svg class="silk" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="silk-iris" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f4c4ec" />
+            <stop offset=".35" stop-color="#c3b0ff" />
+            <stop offset=".65" stop-color="#ade0ff" />
+            <stop offset="1" stop-color="#f1d2ff" />
+          </linearGradient>
+          <filter id="silk-soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="22" /></filter>
+          <filter id="silk-mid" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="9" /></filter>
+          <filter id="silk-sharp" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.6" /></filter>
+        </defs>
+        <g fill="none" stroke-linecap="round">
+          <path d="M2158 104C2142 109 2091 120 2062 135C2033 149 2007 168 1984 191C1961 214 1942 244 1923 272C1904 301 1888 334 1869 362C1850 390 1831 419 1807 442C1784 464 1758 483 1729 498C1700 513 1667 522 1635 532C1602 541 1567 547 1534 556C1502 566 1469 575 1440 589C1411 604 1384 622 1360 644C1336 665 1316 692 1295 718C1274 745 1257 776 1236 802C1216 829 1196 856 1173 879C1149 901 1123 921 1096 937C1068 953 1036 964 1005 976C974 988 940 996 909 1007C878 1018 846 1029 817 1044C788 1058 761 1076 736 1096C712 1117 690 1142 668 1166C646 1191 626 1219 605 1244C583 1269 562 1294 538 1316C514 1338 489 1358 462 1375C435 1392 405 1406 375 1419C345 1433 313 1443 283 1456C253 1469 222 1482 194 1497C166 1513 139 1530 113 1550C88 1569 65 1592 41 1615C18 1638 -15 1674 -26 1686" stroke="#6d6f98" stroke-opacity="0.45" stroke-width="190" filter="url(#silk-soft)" />
+          <path d="M2210 178C2194 183 2143 194 2114 208C2085 223 2059 242 2036 265C2013 288 1994 317 1975 345C1956 374 1940 407 1921 436C1902 464 1883 493 1859 515C1836 538 1810 556 1781 571C1752 586 1719 595 1687 605C1654 615 1619 620 1586 630C1554 639 1521 648 1492 663C1463 677 1436 695 1412 717C1388 739 1368 765 1347 792C1326 818 1309 849 1288 876C1268 902 1248 930 1225 952C1201 975 1176 994 1148 1010C1120 1026 1088 1038 1057 1049C1026 1061 992 1069 961 1080C930 1091 898 1102 869 1117C840 1132 813 1149 789 1170C764 1190 742 1215 720 1240C698 1264 678 1292 657 1317C635 1342 614 1368 590 1390C566 1412 541 1431 514 1449C487 1466 457 1479 427 1493C397 1506 365 1517 335 1530C305 1543 274 1555 246 1571C218 1586 191 1604 165 1623C140 1643 117 1666 93 1688C70 1711 37 1748 26 1760" stroke="#ffffff" stroke-opacity="0.95" stroke-width="120" filter="url(#silk-mid)" />
+          <path d="M2240 219C2223 224 2172 235 2143 249C2114 264 2088 283 2065 306C2042 329 2023 358 2004 387C1985 415 1969 448 1950 477C1931 505 1912 534 1888 556C1865 579 1839 598 1810 613C1782 628 1749 636 1716 646C1684 656 1648 661 1615 671C1583 680 1550 689 1521 704C1492 718 1465 737 1441 758C1417 780 1397 807 1376 833C1356 859 1338 890 1318 917C1297 944 1277 971 1254 993C1230 1016 1205 1035 1177 1051C1149 1068 1118 1079 1087 1091C1055 1102 1022 1110 990 1121C959 1133 927 1143 898 1158C869 1173 843 1191 818 1211C793 1231 771 1256 749 1281C727 1305 707 1333 686 1358C664 1383 643 1409 619 1431C596 1453 570 1473 543 1490C516 1507 486 1520 456 1534C426 1547 395 1558 364 1571C334 1584 304 1596 275 1612C247 1627 220 1645 194 1664C169 1684 146 1707 123 1729C99 1752 66 1789 55 1801" stroke="url(#silk-iris)" stroke-opacity="0.42" stroke-width="12" filter="url(#silk-sharp)" />
+          <path d="M2222 193C2205 199 2154 209 2125 224C2096 238 2070 257 2047 280C2024 303 2005 333 1986 361C1967 390 1951 423 1932 451C1913 479 1894 508 1870 531C1847 553 1821 572 1792 587C1763 602 1730 611 1698 621C1665 630 1630 636 1597 645C1565 655 1532 664 1503 678C1474 693 1447 711 1423 733C1399 754 1379 781 1358 808C1338 834 1320 865 1300 891C1279 918 1259 946 1236 968C1212 990 1187 1010 1159 1026C1131 1042 1100 1053 1068 1065C1037 1077 1004 1085 972 1096C941 1107 909 1118 880 1133C851 1148 824 1165 800 1186C775 1206 753 1231 731 1255C709 1280 689 1308 668 1333C646 1358 625 1384 601 1405C577 1427 552 1447 525 1464C498 1481 468 1495 438 1508C408 1522 376 1532 346 1545C316 1558 286 1571 257 1586C229 1602 202 1619 176 1639C151 1658 128 1681 105 1704C81 1727 48 1763 37 1775" stroke="#ffffff" stroke-opacity="1.00" stroke-width="5" filter="url(#silk-sharp)" />
+          <path d="M1964 -170C1955 -155 1927 -111 1910 -79C1893 -47 1880 -11 1863 21C1847 54 1831 87 1811 113C1790 140 1768 164 1742 183C1716 201 1685 214 1654 225C1622 236 1586 241 1551 247C1516 254 1479 256 1444 263C1410 270 1375 277 1345 289C1314 301 1285 316 1260 335C1234 355 1212 379 1191 406C1170 432 1153 463 1135 492C1116 522 1100 554 1081 583C1061 611 1042 639 1019 663C997 686 972 707 944 724C917 741 886 753 855 764C824 776 790 783 757 792C724 801 690 808 658 819C626 829 594 841 566 856C537 871 510 889 486 909C461 930 439 955 417 980C396 1005 377 1033 356 1059C335 1086 316 1114 294 1139C272 1164 250 1188 225 1208C201 1229 174 1247 147 1264C119 1280 89 1293 59 1306C28 1319 -3 1330 -34 1342C-65 1354 -96 1365 -126 1379C-155 1393 -197 1418 -211 1426" stroke="#6d6f98" stroke-opacity="0.45" stroke-width="230" filter="url(#silk-soft)" />
+          <path d="M2029 -79C2020 -63 1992 -19 1975 13C1959 45 1945 81 1929 113C1912 145 1896 178 1876 205C1855 232 1833 256 1807 275C1781 293 1751 306 1719 317C1687 328 1651 333 1616 339C1581 345 1544 348 1510 355C1475 362 1440 368 1410 381C1379 393 1350 408 1325 427C1299 447 1277 471 1256 497C1235 524 1218 555 1200 584C1181 614 1165 646 1146 674C1126 703 1107 731 1084 754C1062 778 1037 798 1009 815C982 832 952 845 920 856C889 868 855 875 822 884C789 893 755 900 723 911C691 921 659 932 631 947C602 962 575 980 551 1001C526 1022 504 1046 483 1071C461 1096 442 1125 421 1151C401 1178 381 1206 359 1231C337 1255 315 1279 291 1300C266 1321 240 1339 212 1356C184 1372 154 1385 124 1398C93 1411 62 1421 31 1434C0 1446 -31 1457 -61 1471C-90 1485 -132 1510 -146 1517" stroke="#ffffff" stroke-opacity="0.95" stroke-width="150" filter="url(#silk-mid)" />
+          <path d="M2065 -27C2056 -12 2028 32 2012 64C1995 96 1982 133 1965 165C1948 197 1932 230 1912 257C1892 283 1869 307 1843 326C1817 345 1787 358 1755 368C1723 379 1688 384 1653 390C1618 397 1580 399 1546 406C1511 413 1477 420 1446 432C1415 444 1387 459 1361 479C1335 498 1314 523 1293 549C1272 575 1255 606 1236 636C1218 665 1201 697 1182 726C1163 754 1143 782 1121 806C1098 829 1073 850 1046 867C1019 884 988 896 957 908C925 919 891 926 858 935C825 944 791 951 759 962C727 973 696 984 667 999C639 1014 612 1032 587 1053C563 1073 541 1098 519 1123C497 1148 478 1176 458 1203C437 1229 417 1257 396 1282C374 1307 352 1331 327 1352C302 1372 276 1391 248 1407C220 1423 190 1436 160 1449C130 1462 98 1473 67 1485C37 1497 5 1509 -24 1523C-54 1537 -95 1561 -109 1569" stroke="url(#silk-iris)" stroke-opacity="0.48" stroke-width="15" filter="url(#silk-sharp)" />
+          <path d="M2042 -59C2034 -44 2006 0 1989 32C1972 64 1959 101 1942 133C1926 165 1910 198 1889 225C1869 252 1847 275 1821 294C1794 313 1764 326 1733 337C1701 347 1665 352 1630 359C1595 365 1558 368 1523 375C1489 381 1454 388 1423 400C1393 412 1364 427 1338 447C1313 466 1291 491 1270 517C1249 543 1232 574 1214 604C1195 633 1179 666 1160 694C1140 722 1121 751 1098 774C1076 798 1051 818 1023 835C996 852 965 864 934 876C903 887 869 895 836 904C803 913 768 920 737 930C705 941 673 952 645 967C616 982 589 1000 565 1021C540 1041 518 1066 496 1091C475 1116 455 1144 435 1171C414 1197 395 1225 373 1250C351 1275 329 1299 304 1320C280 1341 253 1359 226 1375C198 1391 168 1404 138 1417C107 1430 75 1441 45 1453C14 1465 -17 1477 -47 1491C-76 1505 -118 1529 -132 1537" stroke="#ffffff" stroke-opacity="1.00" stroke-width="6" filter="url(#silk-sharp)" />
+          <path d="M1926 -223C1915 -212 1883 -173 1857 -155C1830 -136 1800 -124 1768 -113C1736 -102 1701 -97 1666 -90C1632 -83 1596 -78 1563 -69C1530 -60 1498 -50 1469 -35C1441 -19 1416 0 1392 23C1369 46 1350 74 1330 101C1310 129 1293 161 1274 189C1254 217 1235 246 1213 270C1191 294 1167 316 1140 334C1113 351 1083 365 1053 377C1022 389 988 397 956 407C924 417 890 425 859 437C828 449 798 462 771 479C743 495 718 515 694 537C670 559 650 585 628 611C607 636 587 664 566 689C544 714 523 740 499 762C476 784 450 804 424 822C397 839 368 854 338 868C309 882 277 893 247 906C217 919 186 930 157 945C127 959 99 975 72 992C45 1010 20 1030 -4 1051C-28 1072 -51 1096 -74 1119C-97 1142 -120 1166 -143 1188C-167 1211 -190 1233 -215 1253C-240 1274 -280 1301 -293 1310" stroke="#6d6f98" stroke-opacity="0.39" stroke-width="170" filter="url(#silk-soft)" />
+          <path d="M1965 -168C1954 -156 1922 -118 1896 -100C1869 -81 1839 -69 1807 -58C1775 -47 1740 -42 1705 -35C1671 -28 1635 -23 1602 -14C1569 -5 1537 5 1508 20C1480 36 1455 55 1431 78C1408 101 1389 129 1369 157C1349 184 1332 216 1313 244C1293 272 1274 301 1252 325C1230 349 1206 371 1179 389C1152 406 1122 420 1092 432C1061 444 1027 452 995 462C963 472 929 480 898 492C867 504 837 517 810 534C782 550 757 570 733 592C710 614 689 640 667 666C646 691 626 719 605 744C583 769 562 795 538 817C515 839 489 859 463 877C436 894 407 909 377 923C348 937 316 948 286 961C256 974 225 985 196 1000C167 1014 138 1030 111 1047C85 1065 59 1085 35 1106C11 1127 -12 1151 -35 1174C-58 1197 -81 1221 -104 1243C-128 1266 -151 1288 -176 1308C-201 1329 -241 1356 -254 1365" stroke="#ffffff" stroke-opacity="0.81" stroke-width="90" filter="url(#silk-mid)" />
+          <path d="M1987 -137C1976 -126 1944 -87 1917 -69C1891 -51 1861 -38 1829 -27C1797 -16 1761 -11 1727 -4C1693 3 1657 7 1624 17C1591 26 1559 36 1530 51C1502 67 1476 86 1453 109C1430 132 1410 160 1391 187C1371 215 1354 247 1335 275C1315 303 1296 332 1274 356C1252 380 1228 402 1201 419C1174 437 1144 451 1114 463C1083 475 1049 483 1017 493C985 503 951 511 920 523C889 535 859 548 832 565C804 581 779 601 755 623C731 645 710 671 689 697C668 722 648 750 627 775C605 800 584 826 560 848C537 870 511 890 484 908C458 925 428 940 399 954C370 968 338 979 308 992C278 1005 247 1016 218 1031C188 1045 160 1061 133 1078C106 1096 81 1116 57 1137C32 1158 10 1182 -13 1205C-37 1227 -59 1252 -82 1274C-106 1297 -129 1319 -154 1339C-179 1359 -219 1386 -232 1396" stroke="url(#silk-iris)" stroke-opacity="0.36" stroke-width="9" filter="url(#silk-sharp)" />
+          <path d="M1974 -156C1962 -145 1930 -106 1904 -88C1878 -70 1847 -57 1815 -46C1784 -35 1748 -30 1714 -23C1680 -16 1643 -12 1610 -2C1577 7 1545 17 1517 32C1488 48 1463 67 1440 90C1416 113 1397 141 1377 168C1357 196 1340 228 1321 256C1302 284 1283 313 1260 337C1238 361 1214 383 1187 400C1161 418 1131 431 1100 444C1070 456 1036 464 1004 474C971 484 938 492 907 504C876 516 846 529 818 545C791 562 765 582 742 604C718 626 697 652 676 677C654 703 635 731 613 756C592 781 570 807 547 829C523 851 498 871 471 889C444 906 415 921 385 935C356 949 325 960 294 973C264 985 233 997 204 1012C175 1026 146 1041 120 1059C93 1077 68 1097 43 1118C19 1139 -4 1163 -27 1186C-50 1208 -72 1233 -96 1255C-119 1277 -143 1300 -168 1320C-193 1340 -233 1367 -246 1377" stroke="#ffffff" stroke-opacity="0.90" stroke-width="4" filter="url(#silk-sharp)" />
+          <path d="M1707 -533C1693 -524 1652 -498 1628 -478C1603 -457 1580 -434 1557 -411C1535 -387 1514 -361 1492 -336C1470 -311 1450 -284 1427 -260C1405 -236 1383 -213 1358 -191C1334 -170 1308 -151 1282 -133C1255 -115 1226 -100 1197 -86C1168 -71 1137 -59 1107 -46C1077 -33 1046 -21 1016 -7C987 6 957 20 929 35C901 51 873 68 847 87C821 106 797 127 773 148C749 170 726 194 703 217C680 240 658 264 635 287C612 310 589 334 565 355C541 376 516 397 490 415C464 434 436 451 409 468C381 484 352 499 323 514C295 529 265 542 236 557C207 572 178 587 150 603C122 619 95 636 68 654C42 672 16 691 -9 711C-34 731 -59 752 -83 774C-107 795 -131 817 -155 839C-179 860 -203 882 -227 903C-252 924 -277 944 -303 963C-328 982 -355 1001 -382 1018C-408 1036 -450 1061 -464 1069" stroke="#6d6f98" stroke-opacity="0.28" stroke-width="150" filter="url(#silk-soft)" />
+          <path d="M1737 -490C1724 -481 1683 -455 1658 -435C1633 -415 1610 -391 1587 -368C1565 -344 1544 -318 1522 -293C1501 -268 1480 -242 1458 -218C1435 -194 1413 -170 1389 -149C1364 -127 1339 -108 1312 -90C1285 -73 1256 -57 1227 -43C1198 -28 1168 -16 1138 -3C1108 10 1077 22 1047 35C1017 49 987 63 959 78C931 94 904 111 878 130C852 149 827 170 803 191C779 213 756 236 733 260C711 283 688 307 665 330C642 353 619 376 595 398C571 419 546 439 520 458C494 477 467 494 439 511C411 527 382 542 354 557C325 572 295 585 266 600C238 615 209 630 181 646C153 662 125 678 98 696C72 714 46 734 21 754C-4 774 -28 795 -53 816C-77 838 -100 860 -124 882C-148 903 -172 925 -197 946C-222 966 -247 987 -272 1006C-298 1025 -324 1043 -351 1061C-378 1079 -420 1104 -433 1112" stroke="#ffffff" stroke-opacity="0.57" stroke-width="70" filter="url(#silk-mid)" />
+          <path d="M1754 -466C1741 -457 1700 -431 1675 -411C1650 -391 1627 -367 1604 -344C1582 -320 1561 -294 1539 -269C1518 -244 1497 -218 1475 -194C1452 -170 1430 -146 1406 -125C1381 -103 1356 -84 1329 -66C1302 -49 1273 -33 1244 -19C1215 -4 1185 8 1155 21C1125 34 1094 46 1064 59C1034 73 1004 87 976 102C948 118 921 135 895 154C869 173 844 194 820 215C796 237 773 260 750 284C728 307 705 331 682 354C659 377 636 400 612 422C588 443 563 463 537 482C511 501 484 518 456 535C428 551 399 566 371 581C342 596 312 609 283 624C255 639 226 654 198 670C170 686 142 702 116 720C89 738 63 758 38 778C13 798 -11 819 -35 840C-60 862 -83 884 -107 906C-131 927 -155 949 -180 970C-205 990 -230 1011 -255 1030C-281 1049 -307 1067 -334 1085C-361 1103 -403 1128 -416 1136" stroke="url(#silk-iris)" stroke-opacity="0.26" stroke-width="7" filter="url(#silk-sharp)" />
+          <path d="M1743 -481C1730 -472 1689 -446 1664 -426C1639 -405 1617 -382 1594 -359C1571 -335 1551 -309 1529 -284C1507 -259 1487 -233 1464 -208C1442 -184 1419 -161 1395 -139C1371 -118 1345 -99 1318 -81C1292 -63 1263 -48 1234 -34C1205 -19 1174 -7 1144 6C1114 19 1083 31 1053 45C1023 58 994 72 966 87C937 103 910 120 884 139C858 158 834 179 810 200C786 222 763 246 740 269C717 292 695 316 672 339C649 362 626 386 602 407C577 428 553 449 527 467C501 486 473 503 446 520C418 536 389 551 360 566C331 581 302 594 273 609C244 624 215 639 187 655C159 671 132 687 105 705C78 723 53 743 28 763C2 783 -22 804 -46 826C-70 847 -94 869 -118 891C-142 912 -166 934 -190 955C-215 976 -240 996 -266 1015C-292 1034 -318 1053 -345 1070C-372 1088 -413 1113 -427 1121" stroke="#ffffff" stroke-opacity="0.65" stroke-width="3" filter="url(#silk-sharp)" />
+        </g>
+      </svg>
+    </div>
+    <a class="skip-link" href="#main" data-vi="Đến nội dung chính" data-ja="本文へスキップ"
+      >Skip to main content</a
+    >
+
+    <svg
+      class="icon-sprite"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5m-6 6 6-6 6 6" /></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M4 12h15m-6-6 6 6-6 6" />
+      </symbol>
+      <symbol id="i-left" viewBox="0 0 24 24">
+        <path d="m15 5-7 7 7 7" />
+      </symbol>
+      <symbol id="i-right" viewBox="0 0 24 24">
+        <path d="m9 5 7 7-7 7" />
+      </symbol>
+      <symbol id="i-out" viewBox="0 0 24 24">
+        <path d="M7 17 17 7M8 7h9v9" />
+      </symbol>
+      <symbol id="i-down" viewBox="0 0 24 24">
+        <path d="M12 4v13m-6-5 6 6 6-6M5 21h14" />
+      </symbol>
+      <symbol id="i-play" viewBox="0 0 24 24">
+        <path d="M7 4.5v15l12-7.5Z" />
+      </symbol>
+      <symbol id="i-code" viewBox="0 0 24 24">
+        <path d="m8 7-5 5 5 5m8-10 5 5-5 5" />
+      </symbol>
+      <symbol id="i-doc" viewBox="0 0 24 24">
+        <path d="M6 3h9l4 4v14H6Zm3 8h7m-7 4h7" />
+      </symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24">
+        <path d="M9 9h11v11H9ZM5 15H4V4h11v1" />
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 24">
+        <path d="m5 5 14 14M19 5 5 19" />
+      </symbol>
+      <symbol id="i-zoom" viewBox="0 0 24 24">
+        <path d="M4 9V4h5m6 0h5v5m0 6v5h-5m-6 0H4v-5" />
+      </symbol>
+      <symbol id="i-send" viewBox="0 0 24 24">
+        <path d="M21 3 10 14M21 3l-7 18-4-7-7-4 18-7Z" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <path d="M3 6h18v12H3Zm0 1 9 6 9-6" />
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24">
+        <path
+          d="m8 3 3 5-3 3c1 3 2 4 5 5l3-3 5 3c-1 4-3 5-6 4C8 18 5 15 3 8 2 5 4 3 8 3Z"
+        />
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <path d="M19 10c0 5-7 11-7 11s-7-6-7-11a7 7 0 1 1 14 0Z" />
+        <circle cx="12" cy="10" r="2.2" />
+      </symbol>
+      <symbol id="i-github" viewBox="0 0 24 24">
+        <path
+          d="M9 20c-5 1-5-2-7-2m14 4v-4a4 4 0 0 0-1-3c3 0 6-1 6-6a5 5 0 0 0-1-3c0-1 0-3-1-3-2 0-3 1-3 1a12 12 0 0 0-8 0S6 3 5 3c-1 0-1 2-1 3a5 5 0 0 0-1 3c0 5 3 6 6 6a4 4 0 0 0-1 3v4"
+        />
+      </symbol>
+      <symbol id="i-target" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8.5" />
+        <circle cx="12" cy="12" r="3.5" />
+      </symbol>
+      <symbol id="i-users" viewBox="0 0 24 24">
+        <circle cx="9" cy="8" r="3.2" />
+        <path
+          d="M3 20v-1a6 6 0 0 1 12 0v1m1-15a3 3 0 0 1 0 6m5 9v-1a6 6 0 0 0-3-5"
+        />
+      </symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24">
+        <path d="M4 20V4m0 16h16M8 16l4-5 3 3 5-7" />
+      </symbol>
+      <symbol id="i-server" viewBox="0 0 24 24">
+        <path d="M4 4h16v6H4Zm0 10h16v6H4ZM8 7h.01M8 17h.01" />
+      </symbol>
+      <symbol id="i-layout" viewBox="0 0 24 24">
+        <path d="M3 4h18v16H3Zm0 5h18M9 9v11" />
+      </symbol>
+      <symbol id="i-db" viewBox="0 0 24 24">
+        <ellipse cx="12" cy="5.5" rx="8" ry="2.8" />
+        <path
+          d="M4 5.5v13c0 1.5 3.6 2.8 8 2.8s8-1.3 8-2.8v-13M4 12c0 1.5 3.6 2.8 8 2.8s8-1.3 8-2.8"
+        />
+      </symbol>
+      <symbol id="i-trophy" viewBox="0 0 24 24">
+        <path
+          d="M7 4h10v5a5 5 0 0 1-10 0V4Zm0 2H4v2a3 3 0 0 0 3 3m10-5h3v2a3 3 0 0 1-3 3m-5 3v4m-4 3h8"
+        />
+      </symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24">
+        <path
+          d="m2 9 10-5 10 5-10 5L2 9Zm4 2v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5m4-2v6"
+        />
+      </symbol>
+      <symbol id="i-cycle" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-14 5.3M4 12a8 8 0 0 1 14-5.3M18 3v4h-4M6 21v-4h4" /></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 19h10a4.5 4.5 0 0 0 .6-9 6 6 0 0 0-11.4 1.6A3.8 3.8 0 0 0 7 19Z" /></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8 7.5 9.5 4.3-1.5 7.5-4.9 7.5-9.5V6L12 3Zm-3.5 9 2.5 2.5 4.5-5" /></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24">
+        <path
+          d="M12 3c.6 5 3.4 8.4 9 9-5.6.6-8.4 4-9 9-.6-5-3.4-8.4-9-9 5.6-.6 8.4-4 9-9Z"
+        />
+      </symbol>
+    </svg>
+
+    <header class="topbar">
+      <div class="wrap">
+        <div class="nav">
+          <a
+            class="brand"
+            href="#top"
+            aria-label="Lê Văn Cảnh, back to top"
+            data-vi-aria-label="Lê Văn Cảnh, về đầu trang" data-ja-aria-label="Lê Văn Cảnh、ページの先頭へ"
+          >
+            <span class="brand-mark">LC</span>
+            <span class="brand-text">
+              <strong>Lê Văn Cảnh</strong>
+              <small>Java Full-Stack Developer</small>
+            </span>
+          </a>
+          <nav
+            class="menu"
+            id="menu"
+            aria-label="Main navigation"
+            data-vi-aria-label="Điều hướng chính" data-ja-aria-label="メインナビゲーション"
+          >
+            <a href="#top" data-vi="Trang chủ" data-ja="ホーム">Home</a>
+            <a href="#about" data-vi="Giới thiệu" data-ja="自己紹介">About</a>
+            <a href="#skills" data-vi="Kỹ năng" data-ja="スキル">Skills</a>
+            <a href="#projects" data-vi="Dự án" data-ja="制作実績">Work</a>
+            <a href="#journey" data-vi="Hành trình" data-ja="歩み">Journey</a>
+            <a href="#achievements" data-vi="Thành tích" data-ja="実績">Achievements</a>
+            <a href="#press" data-vi="Báo chí" data-ja="メディア">Press</a>
+            <a href="#certificates" data-vi="Chứng nhận" data-ja="資格・修了証">Certificates</a>
+            <a class="menu-contact" href="#contact" data-vi="Liên hệ" data-ja="お問い合わせ"
+              >Contact</a
+            >
+          </nav>
+          <div
+            class="lang"
+            role="group"
+            aria-label="Language"
+            data-vi-aria-label="Ngôn ngữ" data-ja-aria-label="言語"
+          >
+            <button
+              type="button"
+              data-lang="en"
+              aria-pressed="true"
+              aria-label="English"
+            >
+              EN
+            </button>
+            <button
+              type="button"
+              data-lang="vi"
+              aria-pressed="false"
+              aria-label="Tiếng Việt"
+            >
+              VI
+            </button>
+            <button
+              type="button"
+              data-lang="ja"
+              aria-pressed="false"
+              aria-label="日本語"
+            >
+              JA
+            </button>
+          </div>
+          <a class="talk" href="#contact">
+            <span data-vi="Liên hệ" data-ja="お問い合わせ">Let's Talk</span>
+            <svg class="icon"><use href="#i-out" /></svg>
+          </a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu"
+          >
+            Menu
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="wrap stack">
+      <section class="panel hero" id="top">
+        <div class="hero-copy">
+          <div class="hero-eyebrow">
+            <p class="kicker" data-vi="Xin chào, tôi là" data-ja="こんにちは、私は">Hello, I'm</p>
+            <p class="status">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span data-vi="Sẵn sàng cho cơ hội mới" data-ja="新しい機会を探しています"
+                >Open to new opportunities</span
+              >
+            </p>
+          </div>
+          <h1 class="hero-name">Lê Văn Cảnh</h1>
+          <p class="hero-role">Java Full-Stack Developer</p>
+          <p
+            class="hero-thesis"
+            data-vi="Mục tiêu của tôi: trở thành kỹ sư backend thiết kế những hệ thống mở rộng tốt, an toàn và luôn vận hành ổn định." data-ja="目標は、拡張性と安全性を備え、止まらずに動き続けるシステムを設計できるバックエンドエンジニアになることです。"
+          >
+            My goal: grow into a backend engineer who designs systems that
+            scale, are secure and keep running.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="#projects">
+              <span data-vi="Xem dự án" data-ja="制作実績を見る">View My Work</span>
+              <svg class="icon"><use href="#i-out" /></svg>
+            </a>
+            <a class="btn btn-glass" href="assets/Le-Van-Canh-CV.pdf" download>
+              <span data-vi="Tải CV" data-ja="履歴書をダウンロード">Download CV</span>
+              <svg class="icon"><use href="#i-down" /></svg>
+            </a>
+          </div>
+          <div class="hero-links">
+            <a
+              class="round"
+              href="https://github.com/canhle1993"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              title="GitHub"
+            >
+              <svg class="icon"><use href="#i-github" /></svg>
+            </a>
+            <a
+              class="round"
+              href="mailto:aplevancanh1993@gmail.com"
+              aria-label="Email aplevancanh1993@gmail.com"
+              title="Email"
+            >
+              <svg class="icon"><use href="#i-mail" /></svg>
+            </a>
+            <a
+              class="round"
+              href="tel:+84869219109"
+              aria-label="Call 0869 219 109"
+              data-vi-aria-label="Gọi 0869 219 109" data-ja-aria-label="0869 219 109 に電話"
+              title="0869 219 109"
+            >
+              <svg class="icon"><use href="#i-phone" /></svg>
+            </a>
+            <span class="hero-divider" aria-hidden="true"></span>
+            <span class="hero-loc">
+              <svg class="icon"><use href="#i-pin" /></svg>
+              <span data-vi="Bình Thạnh, TP. Hồ Chí Minh" data-ja="ホーチミン市ビンタン区">Binh Thanh, Ho Chi Minh City</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <svg
+            class="hero-art"
+            viewBox="0 0 560 600"
+            role="img"
+            aria-label="Lê Văn Cảnh in a brown T-shirt, sitting and smiling at the camera"
+            data-vi-aria-label="Lê Văn Cảnh mặc áo thun nâu, ngồi và mỉm cười nhìn vào máy ảnh" data-ja-aria-label="茶色の T シャツを着て座り、カメラに向かってほほえむ Lê Văn Cảnh"
+          >
+            <defs>
+              <linearGradient id="glass-fill" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffffff" stop-opacity=".72" />
+                <stop offset=".55" stop-color="#f1eefc" stop-opacity=".5" />
+                <stop offset="1" stop-color="#ddd6fb" stop-opacity=".62" />
+              </linearGradient>
+              <radialGradient id="glass-glow" cx=".7" cy=".5" r=".55">
+                <stop offset="0" stop-color="#e3d6ff" stop-opacity=".95" />
+                <stop offset=".55" stop-color="#ece6ff" stop-opacity=".35" />
+                <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+              </radialGradient>
+              <linearGradient id="glass-rim" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffffff" />
+                <stop offset=".35" stop-color="#cbbcff" />
+                <stop offset=".7" stop-color="#8f74f3" />
+                <stop offset="1" stop-color="#5a82f4" />
+              </linearGradient>
+              <filter
+                id="rim-glow"
+                x="-20%"
+                y="-20%"
+                width="140%"
+                height="140%"
+              >
+                <feGaussianBlur stdDeviation="6" />
+              </filter>
+              <linearGradient id="glass-fade" x1="0" y1="0" x2="0" y2="1">
+                <stop offset=".34" stop-color="#000" />
+                <stop offset=".52" stop-color="#fff" />
+              </linearGradient>
+              <mask
+                id="glass-lower"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="560"
+                height="600"
+              >
+                <rect width="560" height="600" fill="url(#glass-fade)" />
+              </mask>
+              <clipPath id="glass-inside">
+                <path
+                  d="M54.4 155.9C56.6 118.8 80.8 96.0 118.0 96.0L440.0 96.0C473.5 96.0 494.0 116.5 494.0 150.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
+                />
+              </clipPath>
+              <clipPath id="person-clip">
+                <path
+                  d="M78.4 -240.0L494.0 -240.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
+                />
+              </clipPath>
+              <filter
+                id="glass-shadow"
+                x="-30%"
+                y="-25%"
+                width="160%"
+                height="160%"
+              >
+                <feDropShadow
+                  dx="0"
+                  dy="28"
+                  stdDeviation="26"
+                  flood-color="#7a63e8"
+                  flood-opacity=".22"
+                />
+              </filter>
+              <filter
+                id="glass-blur"
+                x="-50%"
+                y="-200%"
+                width="200%"
+                height="500%"
+              >
+                <feGaussianBlur stdDeviation="16" />
+              </filter>
+            </defs>
+            <ellipse
+              cx="250"
+              cy="594"
+              rx="200"
+              ry="22"
+              fill="#9c87f2"
+              opacity=".5"
+              filter="url(#glass-blur)"
+            />
+            <path
+              d="M54.4 155.9C56.6 118.8 80.8 96.0 118.0 96.0L440.0 96.0C473.5 96.0 494.0 116.5 494.0 150.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
+              fill="url(#glass-fill)"
+              filter="url(#glass-shadow)"
+            />
+            <path
+              d="M54.4 155.9C56.6 118.8 80.8 96.0 118.0 96.0L440.0 96.0C473.5 96.0 494.0 116.5 494.0 150.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
+              fill="url(#glass-glow)"
+            />
+            <path
+              d="M54.4 155.9C56.6 118.8 80.8 96.0 118.0 96.0L440.0 96.0C473.5 96.0 494.0 116.5 494.0 150.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
+              fill="none"
+              stroke="#ffffff"
+              stroke-width="18"
+              stroke-opacity=".5"
+              clip-path="url(#glass-inside)"
+            />
+            <path
+              d="M54.4 155.9C56.6 118.8 80.8 96.0 118.0 96.0L440.0 96.0C473.5 96.0 494.0 116.5 494.0 150.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
+              fill="none"
+              stroke="#ffffff"
+              stroke-width="9"
+              stroke-opacity=".95"
+              clip-path="url(#glass-inside)"
+            />
+            <path
+              d="M54.4 155.9C56.6 118.8 80.8 96.0 118.0 96.0L440.0 96.0C473.5 96.0 494.0 116.5 494.0 150.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
+              fill="none"
+              stroke="#8b6ff2"
+              stroke-width="10"
+              stroke-opacity=".35"
+              filter="url(#rim-glow)"
+            />
+            <path
+              d="M54.4 155.9C56.6 118.8 80.8 96.0 118.0 96.0L440.0 96.0C473.5 96.0 494.0 116.5 494.0 150.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
+              fill="none"
+              stroke="url(#glass-rim)"
+              stroke-width="4.5"
+            />
+            <image
+              href="assets/img/avatar-cutout.webp"
+              x="-17.5"
+              y="-7.7"
+              width="552.4"
+              height="724"
+              clip-path="url(#person-clip)"
+            />
+            <path
+              d="M54.4 155.9C56.6 118.8 80.8 96.0 118.0 96.0L440.0 96.0C473.5 96.0 494.0 116.5 494.0 150.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
+              fill="none"
+              stroke="url(#glass-rim)"
+              stroke-width="4.5"
+              mask="url(#glass-lower)"
+            />
+            <path
+              d="M54.4 155.9C56.6 118.8 80.8 96.0 118.0 96.0L440.0 96.0C473.5 96.0 494.0 116.5 494.0 150.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
+              fill="none"
+              stroke="#ffffff"
+              stroke-width="9"
+              stroke-opacity=".95"
+              clip-path="url(#glass-inside)"
+              mask="url(#glass-lower)"
+            />
+          </svg>
+          <span class="hero-orb" aria-hidden="true"
+            ><svg class="icon"><use href="#i-spark" /></svg
+          ></span>
+          <a class="float float-top" href="#achievements">
+            <span class="float-icon" aria-hidden="true"
+              ><svg class="icon"><use href="#i-trophy" /></svg
+            ></span>
+            <strong>1<sup>st</sup></strong>
+            <span class="float-name" data-vi="Giải Nhất TechWiz 6" data-ja="TechWiz 6"
+              >TechWiz 6</span
+            >
+            <small data-vi="Hạng mục IoT Ignite" data-ja="IoT Ignite 部門">IoT Ignite track</small>
+          </a>
+          <a class="float float-bottom" href="#achievements">
+            <span class="float-head">
+              <span class="float-icon" aria-hidden="true"
+                ><svg class="icon"><use href="#i-cap" /></svg
+              ></span>
+              <span data-vi="Thủ khoa Aptech 2026" data-ja="Aptech 首席卒業 2026"
+                >Aptech Valedictorian 2026</span
+              >
+            </span>
+            <strong>93<small>/100</small></strong>
+            <svg
+              class="spark"
+              viewBox="0 0 120 40"
+              role="img"
+              aria-label="Semester marks: 89, 96, 92, 96"
+              data-vi-aria-label="Điểm các học kỳ: 89, 96, 92, 96" data-ja-aria-label="各学期の成績:89、96、92、96"
+            >
+              <defs>
+                <linearGradient id="spark-line" x1="0" x2="1" y1="0" y2="0">
+                  <stop offset="0" stop-color="#8a63f0" />
+                  <stop offset="1" stop-color="#5f86f5" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M4 30.4 41 13.6 78 23.2 116 13.6"
+                fill="none"
+                stroke="url(#spark-line)"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle cx="116" cy="13.6" r="3.5" fill="#5f86f5" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="panel about" id="about">
+        <div>
+          <p class="kicker" data-vi="Giới thiệu" data-ja="自己紹介">About me</p>
+          <h2
+            class="title"
+            data-vi="Từ dây chuyền sản xuất<br />đến production code" data-ja="生産ラインから<br />本番コードへ"
+          >
+            From the production line<br />to production code
+          </h2>
+          <ul
+            class="stats"
+            aria-label="Measured results from each stage"
+            data-vi-aria-label="Kết quả đo được qua từng chặng" data-ja-aria-label="各ステージで出した成果"
+          >
+            <li>
+              <span class="tile"
+                ><svg class="icon"><use href="#i-target" /></svg
+              ></span>
+              <strong>100%</strong>
+              <span
+                data-vi="chỉ tiêu sản lượng tháng, dây chuyền 20 người tại Samsung" data-ja="Samsung の 20 名ラインでの月次生産目標の達成率"
+                >of monthly output targets, 20-person line at Samsung</span
+              >
+            </li>
+            <li>
+              <span class="tile"
+                ><svg class="icon"><use href="#i-users" /></svg
+              ></span>
+              <strong>50+</strong>
+              <span
+                data-vi="người dùng ERP mỗi ngày trên tính năng tôi phát triển tại Nichietsu" data-ja="Nichietsu で私が開発した機能を毎日使う ERP ユーザー"
+                >daily ERP users on features I built at Nichietsu</span
+              >
+            </li>
+            <li>
+              <span class="tile"
+                ><svg class="icon"><use href="#i-chart" /></svg
+              ></span>
+              <strong>~40%</strong>
+              <span
+                data-vi="giảm lập lịch thủ công nhờ luồng phê duyệt mới tại Nichietsu" data-ja="Nichietsu の新しい承認フローで削減した手作業のスケジュール調整"
+                >less manual scheduling with a new approval flow at
+                Nichietsu</span
+              >
+            </li>
+            <li>
+              <span class="tile"
+                ><svg class="icon"><use href="#i-code" /></svg
+              ></span>
+              <strong>~380</strong>
+              <span
+                data-vi="API endpoints cho người mua, người bán và quản trị trên Multi-Vendor" data-ja="Multi-Vendor で購入者・出品者・管理者向けに作った API エンドポイント"
+                >API endpoints for buyers, sellers and admins on
+                Multi-Vendor</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="about-text">
+          <p
+            data-vi="<strong>Java Full-Stack Developer</strong> có kinh nghiệm thực tế xây dựng hệ thống ERP và ứng dụng web có khả năng mở rộng với Spring Boot, ReactJS, AWS và REST API." data-ja="Spring Boot、ReactJS、AWS、REST API を使った ERP システムやスケーラブルな Web アプリの開発経験を持つ <strong>Java フルスタック開発者</strong>です。"
+          >
+            <strong>Java Full-Stack Developer</strong> with hands-on experience
+            building ERP systems and scalable web applications using Spring Boot,
+            ReactJS, AWS, and REST APIs.
+          </p>
+          <p
+            data-vi="Đã đưa lên production các tính năng được hơn 50 người dùng mỗi ngày, giảm tới 40% thao tác thủ công." data-ja="毎日 50 人以上が使う機能を本番環境に届け、手作業を最大 40% 削減しました。"
+          >
+            Delivered production features used by 50+ daily users, reducing
+            manual processes by up to 40%.
+          </p>
+          <p
+            data-vi="<strong>Thủ khoa Aptech</strong> (ADSE 2023–2026) và <strong>Giải Nhất TechWiz Global IT Competition 2025</strong>. Tư duy làm việc hướng kết quả từ 7 năm dẫn dắt đội sản xuất tại Samsung Electronics." data-ja="<strong>Aptech 首席卒業</strong>(ADSE 2023–2026)、<strong>TechWiz Global IT Competition 2025 優勝</strong>。Samsung Electronics で 7 年間生産チームを率いた経験から、確実に成果を届ける姿勢を大切にしています。"
+          >
+            <strong>Valedictorian of Aptech</strong> (ADSE 2023–2026) and
+            <strong>1st Place TechWiz Global IT Competition 2025</strong>. Strong
+            delivery mindset from 7 years leading production teams at Samsung
+            Electronics.
+          </p>
+          <a class="btn btn-glass" href="#journey">
+            <span data-vi="Xem hành trình" data-ja="これまでの歩みを見る">See My Journey</span>
+            <svg class="icon"><use href="#i-out" /></svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="stack" id="skills">
+        <div class="panel skills-panel">
+          <p class="kicker" data-vi="Tôi làm gì" data-ja="できること">What I do</p>
+          <h2 class="title" data-vi="Kỹ năng" data-ja="スキル">Skills</h2>
+          <span class="deco-sphere" aria-hidden="true"></span>
+          <!-- Nội dung kỹ năng giữ nguyên tiếng Anh như CV ở cả hai ngôn ngữ -->
+          <div class="skill-grid">
+            <a class="card skill" href="#projects">
+              <span class="tile tile-orange"
+                ><svg class="icon"><use href="#i-server" /></svg
+              ></span>
+              <h3>Backend</h3>
+              <p>Java, Spring Boot, Spring Security, JPA/Hibernate, REST API, Redis</p>
+              <span class="skill-go" aria-hidden="true"
+                ><svg class="icon"><use href="#i-out" /></svg
+              ></span>
+            </a>
+            <a class="card skill" href="#projects">
+              <span class="tile tile-violet"
+                ><svg class="icon"><use href="#i-layout" /></svg
+              ></span>
+              <h3>Frontend</h3>
+              <p>ReactJS, Angular</p>
+              <span class="skill-go" aria-hidden="true"
+                ><svg class="icon"><use href="#i-out" /></svg
+              ></span>
+            </a>
+            <a class="card skill" href="#projects">
+              <span class="tile tile-blue"
+                ><svg class="icon"><use href="#i-db" /></svg
+              ></span>
+              <h3 data-vi="Cơ sở dữ liệu" data-ja="データベース">Database</h3>
+              <p>MySQL, SQLServer, MongoDB</p>
+              <span class="skill-go" aria-hidden="true"
+                ><svg class="icon"><use href="#i-out" /></svg
+              ></span>
+            </a>
+            <a class="card skill" href="#projects">
+              <span class="tile tile-teal"
+                ><svg class="icon"><use href="#i-cycle" /></svg
+              ></span>
+              <h3>DevOps</h3>
+              <p>Docker, GitHub Actions (CI/CD), Linux, Nginx, Git</p>
+              <span class="skill-go" aria-hidden="true"
+                ><svg class="icon"><use href="#i-out" /></svg
+              ></span>
+            </a>
+            <a class="card skill" href="#projects">
+              <span class="tile tile-sky"
+                ><svg class="icon"><use href="#i-cloud" /></svg
+              ></span>
+              <h3>Cloud</h3>
+              <p>AWS (S3, SES, SQS, Parameter Store)</p>
+              <span class="skill-go" aria-hidden="true"
+                ><svg class="icon"><use href="#i-out" /></svg
+              ></span>
+            </a>
+            <a class="card skill" href="#projects">
+              <span class="tile tile-rose"
+                ><svg class="icon"><use href="#i-check" /></svg
+              ></span>
+              <h3 data-vi="Thực hành" data-ja="開発手法">Practices</h3>
+              <p>Unit Testing, Clean Code, Error Handling</p>
+              <span class="skill-go" aria-hidden="true"
+                ><svg class="icon"><use href="#i-out" /></svg
+              ></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <header class="sec-head sec-head-tight">
+            <div>
+              <p class="kicker" data-vi="Công cụ & kỹ năng" data-ja="ツールとスキル">Tools &amp; skills</p>
+              <h2 class="title" data-vi="Công nghệ tôi sử dụng" data-ja="使用技術">Technologies I Use</h2>
+            </div>
+            <button class="btn btn-glass" type="button" data-open="tech-all" aria-haspopup="dialog">
+              <span data-vi="Xem tất cả 54" data-ja="54 件すべて見る">View all 54</span>
+              <svg class="icon"><use href="#i-out" /></svg>
+            </button>
+          </header>
+          <div class="marquee" tabindex="0" aria-label="Technologies I have used" data-vi-aria-label="Các công nghệ tôi đã dùng" data-ja-aria-label="これまでに使った技術">
+            <ul class="tech marquee-track" id="tech-track"></ul>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="projects">
+        <header class="sec-head">
+          <div>
+            <p class="kicker" data-vi="Dự án nổi bật" data-ja="注目のプロジェクト">Featured projects</p>
+            <h2 class="title" data-vi="Dự án tiêu biểu" data-ja="主な制作実績">Selected Work</h2>
+          </div>
+          <p
+            class="sec-note"
+            data-vi="Bảy sản phẩm, từ đồ án qua từng học kỳ ở Aptech đến hệ thống doanh nghiệp đang vận hành, bài thi quốc tế và đồ án AI." data-ja="Aptech の学期プロジェクトから稼働中の業務システム、国際大会、AI 卒業制作まで、7 つの制作物です。"
+          >
+            Seven products, from semester projects at Aptech to a live
+            enterprise system, an international competition and an AI capstone.
+          </p>
+        </header>
+        <div class="work-grid" id="work"></div>
+        <noscript>
+          <p>
+            Turn on JavaScript to see the projects, or view them on
+            <a href="https://github.com/canhle1993">GitHub</a>.
+          </p>
+        </noscript>
+      </section>
+
+      <section class="panel" id="journey">
+        <p class="kicker" data-vi="Hành trình" data-ja="これまでの歩み">My journey</p>
+        <h2 class="title" data-vi="Các trạm đã đi qua" data-ja="これまでのステーション">The Stations So Far</h2>
+        <ol class="steps">
+          <li class="card step">
+            <span class="step-no" aria-hidden="true">01</span>
+            <time>2016 – 2023</time>
+            <h3>Samsung Electronics HCMC CE Complex</h3>
+            <p class="step-role">Production Line Leader</p>
+            <p
+              data-vi="Dẫn dắt dây chuyền 20 người suốt 7 năm: đạt 100% chỉ tiêu tháng, đào tạo hơn 30 công nhân vận hành, giảm khoảng 15% tỷ lệ lỗi." data-ja="20 名のラインを 7 年間統括。月次目標を 100% 達成し、30 名以上の作業者を育成、不良率を約 15% 削減しました。"
+            >
+              Led a 20-person line for 7 years: hit 100% of monthly targets,
+              trained 30+ operators, cut the defect rate by about 15%.
+            </p>
+          </li>
+          <li class="card step">
+            <span class="step-no" aria-hidden="true">02</span>
+            <time>2023</time>
+            <h3>Aptech Computer Education</h3>
+            <p class="step-role" data-vi="Chuyển nghề" data-ja="キャリアチェンジ">Career change</p>
+            <p
+              data-vi="Bắt đầu chương trình Advanced Diploma in Software Engineering (ADSE)." data-ja="ソフトウェアエンジニアリング上級ディプロマ(ADSE)の課程を開始しました。"
+            >
+              Started the Advanced Diploma in Software Engineering (ADSE).
+            </p>
+          </li>
+          <li class="card step">
+            <span class="step-no" aria-hidden="true">03</span>
+            <time data-vi="06 – 09/2024" data-ja="2024年6月〜9月">Jun – Sep 2024</time>
+            <h3>Nichietsu</h3>
+            <p class="step-role">
+              Full-Stack Developer · .NET, Angular, PostgreSQL
+            </p>
+            <p
+              data-vi="Chuyển hệ thống sản xuất cũ từ .NET 3.5 sang nền tảng mới, phụ trách trọn module Sản phẩm. Bảng dữ liệu sửa trực tiếp giúp nhập liệu nhanh hơn khoảng 30%." data-ja="旧来の生産管理システムを .NET 3.5 から最新の技術基盤へ移行し、製品モジュールを一貫して担当しました。インライン編集できるデータグリッドで入力速度が約 30% 向上しました。"
+            >
+              Migrated a legacy manufacturing system from .NET 3.5 to a modern
+              stack and owned the Product module end to end. Inline-editable
+              data grids made data entry about 30% faster.
+            </p>
+          </li>
+          <li class="card step">
+            <span class="step-no" aria-hidden="true">04</span>
+            <time data-vi="09/2024 – 03/2025" data-ja="2024年9月〜2025年3月">Sep 2024 – Mar 2025</time>
+            <h3>Nichietsu</h3>
+            <p class="step-role">
+              Full-Stack Developer · Java Spring Boot, ReactJS, Oracle
+            </p>
+            <p
+              data-vi="Phát triển module Quản lý công trường trong ERP đang vận hành. Không có lỗi nghiêm trọng sau phát hành trong thời gian tôi làm việc." data-ja="稼働中の ERP で現場管理モジュールを開発し、在籍中はリリース後の重大な不具合ゼロでした。"
+            >
+              Built the Construction Site Management module in a live ERP
+              system, with no critical post-release bugs during my tenure.
+            </p>
+          </li>
+          <li class="card step">
+            <span class="step-no" aria-hidden="true">05</span>
+            <time>2025 – 2026</time>
+            <h3>Aptech Computer Education</h3>
+            <p class="step-role">Certified Next-Gen Professional – AI (ACNPRO-AI)</p>
+            <p data-vi="Chuyên sâu Artificial Intelligence, Machine Learning &amp; Deep Learning. Hoàn thành với GPA 97/100." data-ja="人工知能、機械学習、ディープラーニングを専攻。GPA 97/100 で修了しました。">Focused on Artificial Intelligence, Machine Learning &amp; Deep Learning. Completed with a GPA of 97/100.</p>
+          </li>
+          <li class="card step">
+            <span class="step-no" aria-hidden="true">06</span>
+            <time data-vi="19/11/2025" data-ja="2025年11月19日">Nov 19, 2025</time>
+            <h3>TechWiz 6</h3>
+            <p
+              class="step-role"
+              data-vi="Giải Nhất hạng mục IoT Ignite, đội 404 Not Found" data-ja="IoT Ignite 部門 1位(チーム 404 Not Found)"
+            >
+              1st Place in the IoT Ignite track, team 404 Not Found
+            </p>
+            <p
+              data-vi="Xây hệ thống giám sát chất lượng không khí BreatheSafe trong 5 ngày." data-ja="大気質モニタリングシステム BreatheSafe を 5 日間で開発しました。"
+            >
+              Built the BreatheSafe air quality monitoring system in 5 days.
+            </p>
+          </li>
+          <li class="card step">
+            <span class="step-no" aria-hidden="true">07</span>
+            <time data-vi="04/2026" data-ja="2026年4月">Apr 2026</time>
+            <h3 data-vi="Đồ án AI: sinh mô tả ảnh tự động" data-ja="AI 卒業制作:画像キャプション自動生成">
+              AI capstone: neural image captioning
+            </h3>
+            <p class="step-role" data-vi="Đồ án cuối khóa ACNPRO-AI · Nhóm 2 người" data-ja="ACNPRO-AI 卒業制作・2 名チーム">ACNPRO-AI capstone · Team of 2</p>
+            <p
+              data-vi="So sánh ba encoder trên Flickr30k, kèm app demo Streamlit. Đồ án đạt 94/100." data-ja="Flickr30k で 3 種類のエンコーダーを比較し、Streamlit デモアプリも作成。評価 94/100。"
+            >
+              Compared three encoders on Flickr30k, with a Streamlit demo app.
+              Scored 94/100.
+            </p>
+          </li>
+          <li class="card step">
+            <span class="step-no" aria-hidden="true">08</span>
+            <time data-vi="03 – 06/2026" data-ja="2026年3月〜6月">Mar – Jun 2026</time>
+            <h3>Multi-Vendor E-Commerce</h3>
+            <p class="step-role" data-vi="Team Lead · Đồ án học kỳ 4" data-ja="チームリーダー・4 学期のプロジェクト">
+              Team Lead · Semester 4 project
+            </p>
+            <p
+              data-vi="Dẫn dắt nhóm xây nền tảng thương mại điện tử đa nhà bán. Đồ án đạt 99/100." data-ja="マルチベンダー EC を開発するチームを率いました。評価 99/100。"
+            >
+              Led the team that built a multi-vendor marketplace. Scored 99/100.
+            </p>
+          </li>
+          <li class="card step">
+            <span class="step-no" aria-hidden="true">09</span>
+            <time data-vi="23/10/2026" data-ja="2026年10月23日">Oct 23, 2026</time>
+            <h3 data-vi="Thủ khoa khóa ADSE 2023–2026" data-ja="ADSE 2023–2026 首席卒業">
+              ADSE 2023–2026 Valedictorian
+            </h3>
+            <p class="step-role">GPA 93/100</p>
+            <p
+              data-vi="Đại diện tân khoa phát biểu tại lễ tốt nghiệp “Develop to Shine”." data-ja="卒業式「Develop to Shine」で卒業生代表としてスピーチしました。"
+            >
+              Spoke on behalf of the graduates at the “Develop to Shine”
+              ceremony.
+            </p>
+          </li>
+          <li class="step step-next">
+            <time data-vi="Tiếp theo" data-ja="次へ">Next</time>
+            <h3 data-vi="Đội của bạn?" data-ja="あなたのチーム?">Your team?</h3>
+            <a class="btn btn-light" href="#contact">
+              <span data-vi="Liên hệ" data-ja="お問い合わせ">Let's Talk</span>
+              <svg class="icon"><use href="#i-out" /></svg>
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <section class="panel" id="achievements">
+        <header class="sec-head">
+          <div>
+            <p class="kicker" data-vi="Thành tích" data-ja="実績">Achievements</p>
+            <h2 class="title" data-vi="Học vấn & thành tích" data-ja="学歴と受賞">
+              Education &amp; Awards
+            </h2>
+          </div>
+          <p
+            class="sec-note"
+            data-vi="Bảng điểm ADSE và các giấy chứng nhận đều xem được ngay tại đây." data-ja="ADSE の成績証明書と各種証書はここでご覧いただけます。"
+          >
+            The ADSE transcript and certificates are all viewable right here.
+          </p>
+        </header>
+
+        <div class="awards">
+          <article class="card award">
+            <p class="award-kicker">Aptech · 2023–2026</p>
+            <h3 class="award-title" data-vi="Thủ khoa ADSE" data-ja="ADSE 首席卒業">
+              ADSE Valedictorian
+            </h3>
+            <div class="award-split">
+              <div>
+                <p class="award-big"><strong>93</strong>/100</p>
+                <p
+                  data-vi="Advanced Diploma in Software Engineering, tốt nghiệp đầu khóa tại Aptech Computer Education." data-ja="Aptech Computer Education のソフトウェアエンジニアリング上級ディプロマを学年首席で修了しました。"
+                >
+                  Advanced Diploma in Software Engineering, top graduate of the
+                  cohort at Aptech Computer Education.
+                </p>
+                <table class="scores">
+                  <caption data-vi="Điểm tổng kết từng học kỳ, thang 100" data-ja="学期ごとの最終成績(100 点満点)">
+                    Final mark per semester, out of 100
+                  </caption>
+                  <tbody>
+                    <tr
+                      title="Semester 1: 89/100, Distinction"
+                      data-vi-title="Học kỳ 1: 89/100, xếp loại Distinction" data-ja-title="1 学期:89/100、優秀"
+                    >
+                      <th scope="row" data-vi="Học kỳ 1" data-ja="1 学期">Semester 1</th>
+                      <td>
+                        <span class="bar"><span style="--v: 89"></span></span>
+                      </td>
+                      <td class="val">89</td>
+                    </tr>
+                    <tr
+                      title="Semester 2: 96/100, Distinction"
+                      data-vi-title="Học kỳ 2: 96/100, xếp loại Distinction" data-ja-title="2 学期:96/100、優秀"
+                    >
+                      <th scope="row" data-vi="Học kỳ 2" data-ja="2 学期">Semester 2</th>
+                      <td>
+                        <span class="bar"><span style="--v: 96"></span></span>
+                      </td>
+                      <td class="val">96</td>
+                    </tr>
+                    <tr
+                      title="Semester 3: 92/100, Distinction"
+                      data-vi-title="Học kỳ 3: 92/100, xếp loại Distinction" data-ja-title="3 学期:92/100、優秀"
+                    >
+                      <th scope="row" data-vi="Học kỳ 3" data-ja="3 学期">Semester 3</th>
+                      <td>
+                        <span class="bar"><span style="--v: 92"></span></span>
+                      </td>
+                      <td class="val">92</td>
+                    </tr>
+                    <tr
+                      title="Semester 4: 96/100, Distinction"
+                      data-vi-title="Học kỳ 4: 96/100, xếp loại Distinction" data-ja-title="4 学期:96/100、優秀"
+                    >
+                      <th scope="row" data-vi="Học kỳ 4" data-ja="4 学期">Semester 4</th>
+                      <td>
+                        <span class="bar"><span style="--v: 96"></span></span>
+                      </td>
+                      <td class="val">96</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <button
+                class="cert cert-portrait"
+                type="button"
+                data-lightbox="assets/img/chung-nhan-thu-khoa.webp"
+                data-caption="Valedictorian Award certificate from Aptech Computer Education, Oct 23, 2026"
+                data-vi-data-caption="Giấy chứng nhận Valedictorian Award của Aptech Computer Education, 23/10/2026" data-ja-data-caption="Aptech Computer Education の首席卒業証書(2026年10月23日)"
+                data-alt="Valedictorian Award Certificate given to Le Van Canh, signed by Nguyen Thi Hoang Oanh, Director of Aptech Computer Education, on October 23, 2026"
+                data-vi-data-alt="Giấy chứng nhận Valedictorian Award Certificate trao cho Le Van Canh, do Giám đốc Aptech Computer Education Nguyen Thi Hoang Oanh ký ngày 23 tháng 10 năm 2026" data-ja-data-alt="Aptech Computer Education 校長 Nguyen Thi Hoang Oanh が署名し、2026年10月23日に Le Van Canh へ授与された首席卒業証書"
+              >
+                <img
+                  src="assets/img/chung-nhan-thu-khoa.webp"
+                  alt="Lê Văn Cảnh's Valedictorian Award certificate"
+                  data-vi-alt="Giấy chứng nhận thủ khoa Valedictorian Award của Lê Văn Cảnh" data-ja-alt="Lê Văn Cảnh の首席卒業証書"
+                  width="900"
+                  height="1273"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="cert-open">
+                  <svg class="icon"><use href="#i-zoom" /></svg>
+                  <span data-vi="Xem giấy chứng nhận" data-ja="証書を見る">View certificate</span>
+                </span>
+              </button>
+            </div>
+            <button
+              class="btn btn-glass"
+              type="button"
+              data-open="transcript-adse"
+              aria-haspopup="dialog"
+            >
+              <span data-vi="Xem bảng điểm" data-ja="成績証明書を見る">View transcript</span>
+              <svg class="icon"><use href="#i-doc" /></svg>
+            </button>
+          </article>
+
+          <article class="card award">
+            <p class="award-kicker">Techwiz 6 · Global I.T. Competition</p>
+            <h3 class="award-title" data-vi="Giải Nhất IoT Ignite" data-ja="IoT Ignite 部門 1位">
+              1st Place, IoT Ignite
+            </h3>
+            <p
+              data-vi="Đội 404 Not Found giành vị trí cao nhất hạng mục IoT Ignite, cuộc thi có các đội đến từ hơn 15 quốc gia." data-ja="15 か国以上のチームが参加した大会で、チーム 404 Not Found が IoT Ignite 部門の 1 位を獲得しました。"
+            >
+              Team 404 Not Found took the top spot in the IoT Ignite track, at a
+              competition with teams from more than 15 countries.
+            </p>
+            <button
+              class="cert"
+              type="button"
+              data-lightbox="assets/img/chung-nhan-techwiz-6.webp"
+              data-caption="Techwiz 6 first place certificate, IoT Ignite track, Nov 19, 2025"
+              data-vi-data-caption="Giấy chứng nhận giải Nhất Techwiz 6, hạng mục IoT Ignite, 19/11/2025" data-ja-data-caption="Techwiz 6 IoT Ignite 部門 1 位の賞状(2025年11月19日)"
+              data-alt="Certificate of Achievement given to Canh Le Van, team 404 Not Found, for first position in Techwiz 6, IoT Ignite category, on November 19, 2025"
+              data-vi-data-alt="Giấy chứng nhận Certificate of Achievement trao cho Canh Le Van, đội 404 Not Found, vị trí thứ nhất Techwiz 6 hạng mục IoT Ignite, ngày 19 tháng 11 năm 2025" data-ja-data-alt="Techwiz 6 IoT Ignite 部門で 1 位となったチーム 404 Not Found の Canh Le Van に授与された賞状(2025年11月19日)"
+            >
+              <img
+                src="assets/img/chung-nhan-techwiz-6.webp"
+                alt="Lê Văn Cảnh's Techwiz 6 first place certificate"
+                data-vi-alt="Giấy chứng nhận giải Nhất Techwiz 6 của Lê Văn Cảnh" data-ja-alt="Lê Văn Cảnh の Techwiz 6 優勝賞状"
+                width="1123"
+                height="792"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="cert-open">
+                <svg class="icon"><use href="#i-zoom" /></svg>
+                <span data-vi="Xem giấy chứng nhận" data-ja="証書を見る">View certificate</span>
+              </span>
+            </button>
+          </article>
+        </div>
+
+        <div class="card award-note">
+          <div>
+            <p class="award-kicker">Aptech · 2025–2026</p>
+            <h3>Certified Next-Gen Professional – AI</h3>
+            <p class="award-note-focus">Artificial Intelligence, Machine Learning &amp; Deep Learning</p>
+            <p
+              class="award-note-sub"
+              data-vi='Đồ án cuối khóa: <a href="#projects">sinh mô tả ảnh tự động</a>, đạt 94/100' data-ja='卒業制作:<a href="#projects">画像キャプション自動生成</a>(評価 94/100)'
+            >
+              Capstone project: <a href="#projects">neural image captioning</a>,
+              scored 94/100
+            </p>
+          </div>
+          <div class="award-note-side">
+            <p class="award-note-score"><strong>97</strong>/100</p>
+            <button
+              class="btn btn-glass"
+              type="button"
+              data-open="transcript-acn"
+              aria-haspopup="dialog"
+            >
+              <span data-vi="Xem bảng điểm" data-ja="成績証明書を見る">View transcript</span>
+              <svg class="icon"><use href="#i-doc" /></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="press">
+        <header class="sec-head">
+          <div>
+            <p class="kicker" data-vi="Báo chí" data-ja="メディア">Press</p>
+            <h2 class="title" data-vi="Báo chí nhắc đến tôi" data-ja="メディア掲載">In the News</h2>
+            <p
+              class="sec-sub"
+              data-vi="Các bài viết của Aptech Việt Nam nhắc đến tôi và các dự án tôi tham gia." data-ja="私や私が関わったプロジェクトを紹介した Aptech Vietnam の記事です(ベトナム語)。"
+            >
+              Aptech Vietnam articles, in Vietnamese, that mention me and the
+              projects I worked on.
+            </p>
+          </div>
+        </header>
+        <div class="rail-wrap">
+          <button
+              class="round rail-btn rail-prev"
+              type="button"
+              data-rail="-1"
+              aria-label="Previous articles"
+              data-vi-aria-label="Bài trước" data-ja-aria-label="前の記事"
+            >
+              <svg class="icon"><use href="#i-left" /></svg>
+            </button>
+          <ul
+            class="rail"
+            id="press-list"
+            tabindex="0"
+            aria-label="Press articles"
+            data-vi-aria-label="Các bài báo" data-ja-aria-label="掲載記事"
+        ></ul>
+          <button
+              class="round rail-btn rail-next"
+              type="button"
+              data-rail="1"
+              aria-label="Next articles"
+              data-vi-aria-label="Bài tiếp theo" data-ja-aria-label="次の記事"
+            >
+              <svg class="icon"><use href="#i-right" /></svg>
+            </button>
+        </div>
+      </section>
+
+      <section class="panel" id="certificates">
+        <header class="sec-head sec-head-tight">
+          <div>
+            <p class="kicker" data-vi="Chứng nhận" data-ja="資格・修了証">Certificates</p>
+            <h2 class="title" data-vi="Khóa học &amp; chứng nhận" data-ja="講座と修了証">Courses &amp; Certificates</h2>
+            <p class="sec-sub" data-vi="Các khóa học, workshop và cuộc thi tôi đã hoàn thành tại Aptech." data-ja="Aptech で修了した講座、ワークショップ、大会です。">
+              Courses, workshops and competitions I completed at Aptech.
+            </p>
+          </div>
+        </header>
+        <div class="rail-wrap">
+          <button
+              class="round rail-btn rail-prev"
+              type="button"
+              data-rail="-1"
+              aria-label="Previous certificates"
+              data-vi-aria-label="Chứng nhận trước" data-ja-aria-label="前の修了証"
+            >
+              <svg class="icon"><use href="#i-left" /></svg>
+            </button>
+          <ul class="rail cert-rail" tabindex="0" aria-label="Certificates" data-vi-aria-label="Các chứng nhận" data-ja-aria-label="資格・修了証">
+            <li>
+              <button
+                class="cert-card"
+                type="button"
+                data-lightbox="assets/img/cert/cert-git-workshop.webp"
+                data-caption="Workshop: Source Code Management with Git · Aptech Computer Education · Apr 13, 2024"
+                data-vi-data-caption="Workshop: Source Code Management with Git · Aptech Computer Education · 13/04/2024" data-ja-data-caption="Workshop: Source Code Management with Git・Aptech Computer Education・2024年4月13日"
+                data-alt="Certificate of Appreciation from Aptech Computer Education given to Le Van Canh for Workshop: Source Code Management with Git"
+                data-vi-data-alt="Certificate of Appreciation của Aptech Computer Education trao cho Lê Văn Cảnh, Workshop: Source Code Management with Git" data-ja-data-alt="Aptech Computer Education から Le Van Canh への感謝状(Workshop: Source Code Management with Git)"
+              >
+                <span class="cert-thumb"><img src="assets/img/cert/cert-git-workshop.webp" alt="" width="1400" height="1002" loading="lazy" decoding="async" />
+                  <span class="fx-mask fx-a" aria-hidden="true"></span>
+                  <span class="fx-mask fx-b" aria-hidden="true"></span>
+                  <span class="fx-info">
+                    <strong>Workshop: Source Code Management with Git</strong>
+                    <small>Certificate of Appreciation · <time data-vi="13/04/2024" data-ja="2024年4月13日">Apr 13, 2024</time></small>
+                  </span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="cert-card"
+                type="button"
+                data-lightbox="assets/img/cert/cert-ai-tools-data-analyst.webp"
+                data-caption="Tech Class #02: AI Tools for Data Analyst · Aptech Computer Education · Apr 16, 2025"
+                data-vi-data-caption="Tech Class #02: AI Tools for Data Analyst · Aptech Computer Education · 16/04/2025" data-ja-data-caption="Tech Class #02: AI Tools for Data Analyst・Aptech Computer Education・2025年4月16日"
+                data-alt="Certificate of Appreciation from Aptech Computer Education given to Le Van Canh for Tech Class #02: AI Tools for Data Analyst"
+                data-vi-data-alt="Certificate of Appreciation của Aptech Computer Education trao cho Lê Văn Cảnh, Tech Class #02: AI Tools for Data Analyst" data-ja-data-alt="Aptech Computer Education から Le Van Canh への感謝状(Tech Class #02: AI Tools for Data Analyst)"
+              >
+                <span class="cert-thumb"><img src="assets/img/cert/cert-ai-tools-data-analyst.webp" alt="" width="1400" height="996" loading="lazy" decoding="async" />
+                  <span class="fx-mask fx-a" aria-hidden="true"></span>
+                  <span class="fx-mask fx-b" aria-hidden="true"></span>
+                  <span class="fx-info">
+                    <strong>Tech Class #02: AI Tools for Data Analyst</strong>
+                    <small>Certificate of Appreciation · <time data-vi="16/04/2025" data-ja="2025年4月16日">Apr 16, 2025</time></small>
+                  </span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="cert-card"
+                type="button"
+                data-lightbox="assets/img/cert/cert-techwiz-6-participation.webp"
+                data-caption="Techwiz 6: IoT Ignite, team 404 Not Found · Aptech Computer Education · Dec 3, 2025"
+                data-vi-data-caption="Techwiz 6: IoT Ignite, team 404 Not Found · Aptech Computer Education · 03/12/2025" data-ja-data-caption="Techwiz 6: IoT Ignite、チーム 404 Not Found・Aptech Computer Education・2025年12月3日"
+                data-alt="Certificate of Participation from Aptech Computer Education given to Le Van Canh for Techwiz 6: IoT Ignite, team 404 Not Found"
+                data-vi-data-alt="Certificate of Participation của Aptech Computer Education trao cho Lê Văn Cảnh, Techwiz 6: IoT Ignite, team 404 Not Found" data-ja-data-alt="Aptech Computer Education から Le Van Canh への参加証(Techwiz 6: IoT Ignite、チーム 404 Not Found)"
+              >
+                <span class="cert-thumb"><img src="assets/img/cert/cert-techwiz-6-participation.webp" alt="" width="1400" height="1003" loading="lazy" decoding="async" />
+                  <span class="fx-mask fx-a" aria-hidden="true"></span>
+                  <span class="fx-mask fx-b" aria-hidden="true"></span>
+                  <span class="fx-info">
+                    <strong>Techwiz 6: IoT Ignite, team 404 Not Found</strong>
+                    <small>Certificate of Participation · <time data-vi="03/12/2025" data-ja="2025年12月3日">Dec 3, 2025</time></small>
+                  </span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="cert-card"
+                type="button"
+                data-lightbox="assets/img/cert/cert-ai-course.webp"
+                data-caption="Course: Artificial Intelligence · Aptech Computer Education · Jul 29, 2026"
+                data-vi-data-caption="Course: Artificial Intelligence · Aptech Computer Education · 29/07/2026" data-ja-data-caption="Course: Artificial Intelligence・Aptech Computer Education・2026年7月29日"
+                data-alt="Certificate of Appreciation from Aptech Computer Education given to Le Van Canh for Course: Artificial Intelligence"
+                data-vi-data-alt="Certificate of Appreciation của Aptech Computer Education trao cho Lê Văn Cảnh, Course: Artificial Intelligence" data-ja-data-alt="Aptech Computer Education から Le Van Canh への感謝状(Course: Artificial Intelligence)"
+              >
+                <span class="cert-thumb"><img src="assets/img/cert/cert-ai-course.webp" alt="" width="1400" height="1011" loading="lazy" decoding="async" />
+                  <span class="fx-mask fx-a" aria-hidden="true"></span>
+                  <span class="fx-mask fx-b" aria-hidden="true"></span>
+                  <span class="fx-info">
+                    <strong>Course: Artificial Intelligence</strong>
+                    <small>Certificate of Appreciation · <time data-vi="29/07/2026" data-ja="2026年7月29日">Jul 29, 2026</time></small>
+                  </span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="cert-card"
+                type="button"
+                data-lightbox="assets/img/cert/cert-gen-ai-developers.webp"
+                data-caption="Practical Gen AI for Developers · Aptech Computer Education · Aug 21, 2025"
+                data-vi-data-caption="Practical Gen AI for Developers · Aptech Computer Education · 21/08/2025" data-ja-data-caption="Practical Gen AI for Developers・Aptech Computer Education・2025年8月21日"
+                data-alt="Certificate of Participation from Aptech Computer Education given to Le Van Canh for Practical Gen AI for Developers"
+                data-vi-data-alt="Certificate of Participation của Aptech Computer Education trao cho Lê Văn Cảnh, Practical Gen AI for Developers" data-ja-data-alt="Aptech Computer Education から Le Van Canh への修了証(Practical Gen AI for Developers)"
+              >
+                <span class="cert-thumb"><img src="assets/img/cert/cert-gen-ai-developers.webp" alt="" width="980" height="1400" loading="lazy" decoding="async" />
+                  <span class="fx-mask fx-a" aria-hidden="true"></span>
+                  <span class="fx-mask fx-b" aria-hidden="true"></span>
+                  <span class="fx-info">
+                    <strong>Practical Gen AI for Developers</strong>
+                    <small>Certificate of Participation · <time data-vi="21/08/2025" data-ja="2025年8月21日">Aug 21, 2025</time></small>
+                  </span>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="cert-card"
+                type="button"
+                data-lightbox="assets/img/cert/cert-gen-ai-everyone.webp"
+                data-caption="Practical Gen AI for Everyone · Aptech Computer Education · Aug 21, 2025"
+                data-vi-data-caption="Practical Gen AI for Everyone · Aptech Computer Education · 21/08/2025" data-ja-data-caption="Practical Gen AI for Everyone・Aptech Computer Education・2025年8月21日"
+                data-alt="Certificate of Participation from Aptech Computer Education given to Le Van Canh for Practical Gen AI for Everyone"
+                data-vi-data-alt="Certificate of Participation của Aptech Computer Education trao cho Lê Văn Cảnh, Practical Gen AI for Everyone" data-ja-data-alt="Aptech Computer Education から Le Van Canh への修了証(Practical Gen AI for Everyone)"
+              >
+                <span class="cert-thumb"><img src="assets/img/cert/cert-gen-ai-everyone.webp" alt="" width="1001" height="1400" loading="lazy" decoding="async" />
+                  <span class="fx-mask fx-a" aria-hidden="true"></span>
+                  <span class="fx-mask fx-b" aria-hidden="true"></span>
+                  <span class="fx-info">
+                    <strong>Practical Gen AI for Everyone</strong>
+                    <small>Certificate of Participation · <time data-vi="21/08/2025" data-ja="2025年8月21日">Aug 21, 2025</time></small>
+                  </span>
+                </span>
+              </button>
+            </li>
+          </ul>
+          <button
+              class="round rail-btn rail-next"
+              type="button"
+              data-rail="1"
+              aria-label="Next certificates"
+              data-vi-aria-label="Chứng nhận tiếp theo" data-ja-aria-label="次の修了証"
+            >
+              <svg class="icon"><use href="#i-right" /></svg>
+            </button>
+        </div>
+      </section>
+
+      <section class="panel contact" id="contact">
+        <div class="contact-info">
+          <p class="kicker" data-vi="Trạm tiếp theo" data-ja="次のステーション">Next station</p>
+          <h2 class="title" data-vi="Có thể là đội của bạn." data-ja="次は、あなたのチームかもしれません。">
+            It could be your team.
+          </h2>
+          <p
+            class="contact-lead"
+            data-vi="Tôi sẵn sàng trao đổi về cơ hội nghề nghiệp và dự án mới. Gửi email hoặc gọi điện đều được." data-ja="求人や新しいプロジェクトのご相談をお待ちしています。メールでもお電話でもお気軽にどうぞ。"
+          >
+            I'm happy to talk about career opportunities and new projects. Email
+            or call, either works.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="tile"
+                ><svg class="icon"><use href="#i-mail" /></svg
+              ></span>
+              <a href="mailto:aplevancanh1993@gmail.com"
+                >aplevancanh1993@gmail.com</a
+              >
+              <button
+                class="round round-s"
+                id="copy-email"
+                type="button"
+                data-email="aplevancanh1993@gmail.com"
+                aria-label="Copy email"
+                data-vi-aria-label="Sao chép email" data-ja-aria-label="メールアドレスをコピー"
+                title="Copy email"
+                data-vi-title="Sao chép email" data-ja-title="メールアドレスをコピー"
+              >
+                <svg class="icon"><use href="#i-copy" /></svg>
+              </button>
+            </li>
+            <li>
+              <span class="tile"
+                ><svg class="icon"><use href="#i-phone" /></svg
+              ></span>
+              <a href="tel:+84869219109">0869 219 109</a>
+            </li>
+            <li>
+              <span class="tile"
+                ><svg class="icon"><use href="#i-github" /></svg
+              ></span>
+              <a
+                href="https://github.com/canhle1993"
+                target="_blank"
+                rel="noopener noreferrer"
+                >github.com/canhle1993</a
+              >
+            </li>
+            <li>
+              <span class="tile"
+                ><svg class="icon"><use href="#i-pin" /></svg
+              ></span>
+              <span data-vi="Bình Thạnh, TP. Hồ Chí Minh" data-ja="ホーチミン市ビンタン区"
+                >Binh Thanh, Ho Chi Minh City</span
+              >
+            </li>
+            <li>
+              <span class="tile"
+                ><svg class="icon"><use href="#i-down" /></svg
+              ></span>
+              <a
+                href="assets/Le-Van-Canh-CV.pdf"
+                download
+                data-vi="Tải CV (PDF)" data-ja="履歴書をダウンロード(PDF)"
+                >Download CV (PDF)</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Gửi qua Web3Forms (gói Free). Access key là khóa công khai, đặt trong code là bình thường. -->
+        <form
+          class="card contact-form"
+          id="contact-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input type="hidden" name="access_key" value="5f2d990a-5ca5-4bec-8581-d6defe25ad18" />
+          <input type="hidden" name="from_name" value="canhle.dev portfolio" />
+          <!-- Ô bẫy chống bot: người thật không thấy và không điền -->
+          <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="field-row">
+            <label>
+              <span class="sr-only" data-vi="Tên của bạn" data-ja="お名前">Your name</span>
+              <input
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+                placeholder="Your name"
+                data-vi-placeholder="Tên của bạn" data-ja-placeholder="お名前"
+              />
+            </label>
+            <label>
+              <span class="sr-only" data-vi="Email của bạn" data-ja="メールアドレス">Your email</span>
+              <input
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                placeholder="Your email"
+                data-vi-placeholder="Email của bạn" data-ja-placeholder="メールアドレス"
+              />
+            </label>
+          </div>
+          <label>
+            <span class="sr-only" data-vi="Chủ đề" data-ja="件名">Subject</span>
+            <input
+              name="subject"
+              type="text"
+              placeholder="Subject"
+              data-vi-placeholder="Chủ đề" data-ja-placeholder="件名"
+            />
+          </label>
+          <label>
+            <span class="sr-only" data-vi="Nội dung" data-ja="メッセージ">Your message</span>
+            <textarea
+              name="message"
+              rows="6"
+              required
+              placeholder="Your message"
+              data-vi-placeholder="Nội dung" data-ja-placeholder="メッセージ"
+            ></textarea>
+          </label>
+          <button class="btn btn-dark btn-block" type="submit">
+            <span data-vi="Gửi tin nhắn" data-ja="メッセージを送信">Send Message</span>
+            <svg class="icon"><use href="#i-send" /></svg>
+          </button>
+          <p class="form-note" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="sculpture" aria-hidden="true">
+          <svg viewBox="0 0 300 440" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="ball" cx="38%" cy="30%" r="75%">
+                <stop offset="0" stop-color="#ffffff" />
+                <stop offset=".45" stop-color="#d9d4fb" />
+                <stop offset=".8" stop-color="#a99df0" />
+                <stop offset="1" stop-color="#8f8ae8" />
+              </radialGradient>
+              <linearGradient id="ribbon-a" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffffff" stop-opacity=".95" />
+                <stop offset=".5" stop-color="#b9a9f6" stop-opacity=".75" />
+                <stop offset="1" stop-color="#7f9df7" stop-opacity=".85" />
+              </linearGradient>
+              <linearGradient id="ribbon-b" x1="1" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#a7f0ea" stop-opacity=".7" />
+                <stop offset=".5" stop-color="#ffffff" stop-opacity=".9" />
+                <stop offset="1" stop-color="#c7b4fa" stop-opacity=".8" />
+              </linearGradient>
+              <filter id="soft"><feGaussianBlur stdDeviation="1.4" /></filter>
+              <filter id="softer"><feGaussianBlur stdDeviation="16" /></filter>
+            </defs>
+            <ellipse
+              cx="150"
+              cy="405"
+              rx="105"
+              ry="20"
+              fill="#7e78c9"
+              opacity=".22"
+              filter="url(#softer)"
+            />
+            <g filter="url(#soft)" fill="none" stroke-linecap="round">
+              <path
+                d="M70 330C10 240 60 110 170 86c88-19 140 58 92 144-40 72-142 96-192 100Z"
+                stroke="url(#ribbon-a)"
+                stroke-width="30"
+              />
+              <path
+                d="M56 262c8-88 92-172 186-138 62 23 58 118-8 174-54 46-140 74-178-36Z"
+                stroke="url(#ribbon-b)"
+                stroke-width="18"
+                opacity=".85"
+              />
+            </g>
+            <circle cx="172" cy="190" r="82" fill="url(#ball)" />
+            <ellipse
+              cx="146"
+              cy="152"
+              rx="34"
+              ry="20"
+              fill="#fff"
+              opacity=".75"
+              filter="url(#soft)"
+              transform="rotate(-24 146 152)"
+            />
+            <g filter="url(#soft)" fill="none" stroke-linecap="round">
+              <path
+                d="M84 366c-28-54 2-116 62-132 56-15 112 2 122 40 10 40-46 92-108 104-30 6-60 8-76-12Z"
+                stroke="url(#ribbon-a)"
+                stroke-width="26"
+              />
+              <path
+                d="M108 372c44-8 124-44 134-92"
+                stroke="#ffffff"
+                stroke-width="7"
+                opacity=".8"
+              />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <p>© <span id="year">2026</span> Lê Văn Cảnh</p>
+        <a href="#top" data-vi="Về đầu trang" data-ja="ページの先頭へ">Back to top</a>
+      </footer>
+    </main>
+
+    <dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
+      <div class="sheet-bar">
+        <p class="sheet-meta" id="sheet-meta"></p>
+        <button
+          class="round"
+          type="button"
+          data-close
+          aria-label="Close project details"
+          data-vi-aria-label="Đóng chi tiết dự án" data-ja-aria-label="プロジェクト詳細を閉じる"
+        >
+          <svg class="icon"><use href="#i-close" /></svg>
+        </button>
+      </div>
+      <div class="sheet-body" id="sheet-body"></div>
+    </dialog>
+
+    <dialog class="sheet" id="tech-all" aria-labelledby="tech-all-title">
+      <div class="sheet-bar">
+        <p class="sheet-meta" data-vi="54 công nghệ, lấy từ CV và các dự án" data-ja="履歴書とプロジェクトで使った 54 の技術">54 technologies, from my CV and projects</p>
+        <button class="round" type="button" data-close aria-label="Close" data-vi-aria-label="Đóng" data-ja-aria-label="閉じる">
+          <svg class="icon"><use href="#i-close" /></svg>
+        </button>
+      </div>
+      <div class="sheet-body">
+        <h2 id="tech-all-title" data-vi="Công nghệ tôi đã dùng" data-ja="これまでに使った技術">Technologies I Have Used</h2>
+        <!-- Danh sách gốc: hàng chạy trên trang được tạo từ đây -->
+        <section class="tech-group">
+          <h3 data-vi="Ngôn ngữ" data-ja="言語">Languages</h3>
+          <ul class="tech tech-grid">
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/java/java-original.svg" alt="" width="30" height="30" loading="lazy" />Java</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg" alt="" width="30" height="30" loading="lazy" />Python</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/typescript/typescript-original.svg" alt="" width="30" height="30" loading="lazy" />TypeScript</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg" alt="" width="30" height="30" loading="lazy" />JavaScript</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/csharp/csharp-original.svg" alt="" width="30" height="30" loading="lazy" />C#</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/php/php-original.svg" alt="" width="30" height="30" loading="lazy" />PHP</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg" alt="" width="30" height="30" loading="lazy" />HTML5</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg" alt="" width="30" height="30" loading="lazy" />CSS3</li>
+          </ul>
+        </section>
+        <section class="tech-group">
+          <h3>Backend</h3>
+          <ul class="tech tech-grid">
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/spring/spring-original.svg" alt="" width="30" height="30" loading="lazy" />Spring Boot</li>
+            <li><img src="assets/img/tech/springsecurity.svg" alt="" width="30" height="30" loading="lazy" />Spring Security</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/hibernate/hibernate-original.svg" alt="" width="30" height="30" loading="lazy" />Hibernate</li>
+            <li><span class="tech-mono" aria-hidden="true">JPA</span>JPA</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/dotnetcore/dotnetcore-original.svg" alt="" width="30" height="30" loading="lazy" />ASP.NET Core</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg" alt="" width="30" height="30" loading="lazy" />Node.js</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nestjs/nestjs-original.svg" alt="" width="30" height="30" loading="lazy" />NestJS</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/laravel/laravel-original.svg" alt="" width="30" height="30" loading="lazy" />Laravel</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/flask/flask-original.svg" alt="" width="30" height="30" loading="lazy" />Flask</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/socketio/socketio-original.svg" alt="" width="30" height="30" loading="lazy" />Socket.IO</li>
+            <li><span class="tech-mono" aria-hidden="true">WS</span>WebSocket</li>
+          </ul>
+        </section>
+        <section class="tech-group">
+          <h3>Frontend</h3>
+          <ul class="tech tech-grid">
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/react/react-original.svg" alt="" width="30" height="30" loading="lazy" />ReactJS</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/angular/angular-original.svg" alt="" width="30" height="30" loading="lazy" />Angular</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/bootstrap/bootstrap-original.svg" alt="" width="30" height="30" loading="lazy" />Bootstrap</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/jquery/jquery-original.svg" alt="" width="30" height="30" loading="lazy" />jQuery</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/java/java-original.svg" alt="" width="30" height="30" loading="lazy" />Java Swing</li>
+          </ul>
+        </section>
+        <section class="tech-group">
+          <h3 data-vi="Cơ sở dữ liệu" data-ja="データベース">Database</h3>
+          <ul class="tech tech-grid">
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mysql/mysql-original.svg" alt="" width="30" height="30" loading="lazy" />MySQL</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="" width="30" height="30" loading="lazy" />SQL Server</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/oracle/oracle-original.svg" alt="" width="30" height="30" loading="lazy" />Oracle</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/postgresql/postgresql-original.svg" alt="" width="30" height="30" loading="lazy" />PostgreSQL</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mongodb/mongodb-original.svg" alt="" width="30" height="30" loading="lazy" />MongoDB</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/redis/redis-original.svg" alt="" width="30" height="30" loading="lazy" />Redis</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mariadb/mariadb-original.svg" alt="" width="30" height="30" loading="lazy" />MariaDB</li>
+            <li><img src="assets/img/tech/flyway.svg" alt="" width="30" height="30" loading="lazy" />Flyway</li>
+          </ul>
+        </section>
+        <section class="tech-group">
+          <h3>DevOps &amp; Cloud</h3>
+          <ul class="tech tech-grid">
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/docker/docker-original.svg" alt="" width="30" height="30" loading="lazy" />Docker</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/githubactions/githubactions-original.svg" alt="" width="30" height="30" loading="lazy" />GitHub Actions</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/linux/linux-original.svg" alt="" width="30" height="30" loading="lazy" />Linux</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nginx/nginx-original.svg" alt="" width="30" height="30" loading="lazy" />Nginx</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/git/git-original.svg" alt="" width="30" height="30" loading="lazy" />Git</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/maven/maven-original.svg" alt="" width="30" height="30" loading="lazy" />Maven</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/eclipse/eclipse-original.svg" alt="" width="30" height="30" loading="lazy" />Eclipse</li>
+            <li><img src="assets/img/tech/pm2.svg" alt="" width="30" height="30" loading="lazy" />PM2</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="" width="30" height="30" loading="lazy" />AWS</li>
+          </ul>
+        </section>
+        <section class="tech-group">
+          <h3 data-vi="Kiểm thử &amp; báo cáo" data-ja="テストとレポート">Testing &amp; reporting</h3>
+          <ul class="tech tech-grid">
+            <li><img src="assets/img/tech/testcontainers.webp" alt="" width="30" height="30" loading="lazy" />Testcontainers</li>
+            <li><img src="assets/img/tech/jaspersoft.webp" alt="" width="30" height="30" loading="lazy" />JasperReports</li>
+            <li><img src="assets/img/tech/powerbi.svg" alt="" width="30" height="30" loading="lazy" />Power BI</li>
+          </ul>
+        </section>
+        <section class="tech-group">
+          <h3 data-vi="Thanh toán &amp; tích hợp" data-ja="決済と外部連携">Payments &amp; integrations</h3>
+          <ul class="tech tech-grid">
+            <li><span class="tech-mono" aria-hidden="true">VP</span>VNPay</li>
+            <li><img src="assets/img/tech/stripe.svg" alt="" width="30" height="30" loading="lazy" />Stripe</li>
+            <li><img src="assets/img/tech/zxing.webp" alt="" width="30" height="30" loading="lazy" />ZXing</li>
+            <li><span class="tech-mono" aria-hidden="true">VB</span>Vbee API</li>
+            <li><span class="tech-mono" aria-hidden="true">TS</span>ThingSpeak</li>
+          </ul>
+        </section>
+        <section class="tech-group">
+          <h3>AI &amp; IoT</h3>
+          <ul class="tech tech-grid">
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/pytorch/pytorch-original.svg" alt="" width="30" height="30" loading="lazy" />PyTorch</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/jupyter/jupyter-original.svg" alt="" width="30" height="30" loading="lazy" />Jupyter</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/streamlit/streamlit-original.svg" alt="" width="30" height="30" loading="lazy" />Streamlit</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/opencv/opencv-original.svg" alt="" width="30" height="30" loading="lazy" />OpenCV</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/raspberrypi/raspberrypi-original.svg" alt="" width="30" height="30" loading="lazy" />Raspberry Pi</li>
+          </ul>
+        </section>
+      </div>
+    </dialog>
+
+    <dialog class="sheet" id="transcript-adse" aria-labelledby="transcript-adse-title">
+      <div class="sheet-bar">
+        <p class="sheet-meta">Aptech Computer Education · ADSE 2023–2026</p>
+        <button class="round" type="button" data-close aria-label="Close" data-vi-aria-label="Đóng" data-ja-aria-label="閉じる">
+          <svg class="icon"><use href="#i-close" /></svg>
+        </button>
+      </div>
+      <div class="sheet-body">
+        <h2 id="transcript-adse-title" data-vi="Bảng điểm ADSE" data-ja="ADSE 成績証明書">ADSE Transcript</h2>
+        <p class="sheet-lead" data-vi="Bảng điểm 4 học kỳ, điểm tổng kết 93/100." data-ja="4 学期分の成績表。総合評価 93/100。">Study performance for all four semesters, overall 93/100.</p>
+        <figure class="transcript-page">
+          <img
+            src="assets/img/transcript/adse-semester-1.webp"
+            alt="ADSE study performance, semester 1"
+            data-vi-alt="Bảng điểm ADSE, học kỳ 1"
+            data-ja-alt="ADSE 成績表、1 学期"
+            width="1159"
+            height="1638"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption data-vi="Học kỳ 1" data-ja="1 学期">Semester 1</figcaption>
+        </figure>
+        <figure class="transcript-page">
+          <img
+            src="assets/img/transcript/adse-semester-2.webp"
+            alt="ADSE study performance, semester 2"
+            data-vi-alt="Bảng điểm ADSE, học kỳ 2"
+            data-ja-alt="ADSE 成績表、2 学期"
+            width="1159"
+            height="1638"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption data-vi="Học kỳ 2" data-ja="2 学期">Semester 2</figcaption>
+        </figure>
+        <figure class="transcript-page">
+          <img
+            src="assets/img/transcript/adse-semester-3.webp"
+            alt="ADSE study performance, semester 3"
+            data-vi-alt="Bảng điểm ADSE, học kỳ 3"
+            data-ja-alt="ADSE 成績表、3 学期"
+            width="1159"
+            height="1638"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption data-vi="Học kỳ 3" data-ja="3 学期">Semester 3</figcaption>
+        </figure>
+        <figure class="transcript-page">
+          <img
+            src="assets/img/transcript/adse-semester-4.webp"
+            alt="ADSE study performance, semester 4"
+            data-vi-alt="Bảng điểm ADSE, học kỳ 4"
+            data-ja-alt="ADSE 成績表、4 学期"
+            width="1159"
+            height="1638"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption data-vi="Học kỳ 4" data-ja="4 学期">Semester 4</figcaption>
+        </figure>
+      </div>
+    </dialog>
+
+    <dialog class="sheet" id="transcript-acn" aria-labelledby="transcript-acn-title">
+      <div class="sheet-bar">
+        <p class="sheet-meta">Aptech Computer Education · ACNPRO-AI 2025–2026</p>
+        <button class="round" type="button" data-close aria-label="Close" data-vi-aria-label="Đóng" data-ja-aria-label="閉じる">
+          <svg class="icon"><use href="#i-close" /></svg>
+        </button>
+      </div>
+      <div class="sheet-body">
+        <h2 id="transcript-acn-title" data-vi="Bảng điểm ACNPRO-AI" data-ja="ACNPRO-AI 成績証明書">ACNPRO-AI Transcript</h2>
+        <p class="sheet-lead" data-vi="Certified Next-Gen Professional – AI, điểm tổng kết 97/100." data-ja="Certified Next-Gen Professional – AI、総合評価 97/100。">Certified Next-Gen Professional – AI, overall 97/100.</p>
+        <figure class="transcript-page">
+          <img
+            src="assets/img/transcript/acnpro-ai.webp"
+            alt="ACNPRO-AI study performance, overall 97/100"
+            data-vi-alt="Bảng điểm ACNPRO-AI, điểm tổng kết 97/100"
+            data-ja-alt="ACNPRO-AI 成績表、総合評価 97/100"
+            width="1240"
+            height="1748"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+      </div>
+    </dialog>
+
+    <dialog
+      class="lightbox"
+      id="lightbox"
+      aria-label="Large image view"
+      data-vi-aria-label="Xem ảnh lớn" data-ja-aria-label="画像の拡大表示"
+    >
+      <button
+        class="round"
+        type="button"
+        data-close
+        aria-label="Close image"
+        data-vi-aria-label="Đóng ảnh" data-ja-aria-label="画像を閉じる"
+      >
+        <svg class="icon"><use href="#i-close" /></svg>
+      </button>
+      <img id="lightbox-img" alt="" />
+      <p id="lightbox-cap"></p>
+    </dialog>
+
+    <a
+      class="round to-top"
+      id="to-top"
+      href="#top"
+      aria-label="Back to top"
+      data-vi-aria-label="Về đầu trang"
+      data-ja-aria-label="ページの先頭へ"
+      title="Back to top"
+      data-vi-title="Về đầu trang"
+      data-ja-title="ページの先頭へ"
+    >
+      <svg class="icon"><use href="#i-up" /></svg>
+    </a>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

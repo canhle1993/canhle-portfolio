@@ -1,0 +1,10 @@
+# Chỉ đưa site lên GitHub: index.html, assets/, README.md
+.DS_Store
+.claude/
+.backup-*/
+photo/
+bao-chi/
+Chứng nhận/
+tai-lieu-tham-khao.rtf
+Le-Van-Canh-Full-Stack- Developer.pdf
+Lê Văn Cảnh — Java full-stack.png
