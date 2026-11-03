@@ -2745,6 +2745,57 @@ main.stack {
   }
 }
 
+/* Điện thoại và máy tính bảng (màn hình cảm ứng hoặc hẹp):
+   Safari trên iPhone dễ bị treo vì hết bộ nhớ đồ họa khi gặp bộ lọc làm mờ
+   trên cả màn hình. Ở đây tắt gợn sóng lụa và mọi backdrop-filter,
+   thay bằng nền kính đục hơn để vẫn giữ được kiểu dáng. */
+@media (hover: none), (pointer: coarse), (max-width: 860px) {
+  .silk {
+    display: none;
+  }
+
+  .bg {
+    background:
+      linear-gradient(118deg, transparent 30%, rgba(255, 255, 255, 0.55) 40%, transparent 50%),
+      linear-gradient(118deg, transparent 58%, rgba(255, 255, 255, 0.4) 66%, transparent 74%),
+      radial-gradient(70vw 50vw at 95% 5%, rgba(255, 255, 255, 0.9) 0, transparent 60%),
+      radial-gradient(60vw 50vw at 100% 90%, rgba(214, 206, 246, 0.5) 0, transparent 65%),
+      linear-gradient(180deg, #e4e4eb 0%, #dcdde5 55%, #e1e1e8 100%);
+  }
+
+  .panel,
+  .nav,
+  .float,
+  .to-top,
+  .deco-sphere,
+  .sheet::backdrop,
+  .lightbox::backdrop {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+
+  .panel {
+    background: linear-gradient(170deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 40%), rgba(236, 237, 243, 0.82);
+  }
+
+  .nav {
+    background: rgba(244, 244, 249, 0.94);
+  }
+
+  .float {
+    box-shadow: 0 10px 24px rgba(84, 88, 150, 0.18);
+  }
+
+  .to-top {
+    background: rgba(255, 255, 255, 0.92);
+  }
+
+  .sheet::backdrop,
+  .lightbox::backdrop {
+    background: rgba(30, 30, 60, 0.6);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
