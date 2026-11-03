@@ -1186,23 +1186,54 @@ main.stack {
 
 /* Màn hình cảm ứng không rê chuột được: luôn hiện dải thông tin ở đáy ảnh */
 @media (hover: none) {
-  .fx-info {
-    top: auto;
-    bottom: 0;
-    transform: translate(-50%, 0);
+  .fx-mask {
+    display: none;
   }
 
-  .fx-info > * {
+  .cert-card .cert-thumb {
+    height: auto;
+    overflow: visible;
+    background: none;
+  }
+
+  .cert-card .cert-thumb img {
+    background: linear-gradient(140deg, rgba(244, 242, 252, 0.8), rgba(222, 224, 238, 0.6));
+    border-radius: var(--r-m);
+  }
+
+  .fx-info {
+    position: static;
+    width: 100%;
+    padding: 10px 4px 2px;
+    background: none;
+    color: var(--ink);
+    text-align: left;
+    transform: none;
+    transition: none;
+  }
+
+  .fx-info strong,
+  .fx-info small {
     opacity: 1;
+    transition: none;
+  }
+
+  /* iPhone giữ trạng thái :hover sau khi chạm, nên ghi đè cả trạng thái đó */
+  .cert-card:hover .fx-info,
+  .cert-card:focus-visible .fx-info {
+    transform: none;
   }
 
   .fx-info strong {
-    padding: 8px 4px 6px;
-    font-size: 0.875rem;
+    padding: 0;
+    border: 0;
+    font-size: 0.9375rem;
   }
 
   .fx-info small {
-    padding: 6px 4px 8px;
+    padding: 2px 0 0;
+    font-style: normal;
+    color: var(--muted);
   }
 }
 
@@ -2627,9 +2658,10 @@ main.stack {
   }
 
   .float-top {
-    top: 2%;
-    min-width: 104px;
-    padding: 10px 12px;
+    top: 0;
+    right: -6px;
+    min-width: 92px;
+    padding: 8px 10px;
   }
 
   .float-top .float-icon {
@@ -2651,9 +2683,10 @@ main.stack {
   }
 
   .float-bottom {
-    bottom: 3%;
-    width: 168px;
-    padding: 10px 12px;
+    right: -6px;
+    bottom: -14px;
+    width: 148px;
+    padding: 8px 10px;
   }
 
   .float-head {

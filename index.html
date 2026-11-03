@@ -39,7 +39,7 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
     />
     <link rel="preload" as="image" href="assets/img/avatar-cutout.webp" />
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/style.css?v=20261103e" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -385,20 +385,10 @@
               >
                 <feGaussianBlur stdDeviation="6" />
               </filter>
-              <linearGradient id="glass-fade" x1="0" y1="0" x2="0" y2="1">
-                <stop offset=".34" stop-color="#000" />
-                <stop offset=".52" stop-color="#fff" />
-              </linearGradient>
-              <mask
-                id="glass-lower"
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
-                width="560"
-                height="600"
-              >
-                <rect width="560" height="600" fill="url(#glass-fade)" />
-              </mask>
+              <!-- Viền phía trước chỉ vẽ ở nửa dưới (trước thân người), nửa trên nằm sau tóc -->
+              <clipPath id="glass-lower">
+                <rect x="0" y="300" width="560" height="320" />
+              </clipPath>
               <clipPath id="glass-inside">
                 <path
                   d="M54.4 155.9C56.6 118.8 80.8 96.0 118.0 96.0L440.0 96.0C473.5 96.0 494.0 116.5 494.0 150.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
@@ -490,22 +480,22 @@
               height="724"
               clip-path="url(#person-clip)"
             />
-            <path
-              d="M54.4 155.9C56.6 118.8 80.8 96.0 118.0 96.0L440.0 96.0C473.5 96.0 494.0 116.5 494.0 150.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
-              fill="none"
-              stroke="url(#glass-rim)"
-              stroke-width="4.5"
-              mask="url(#glass-lower)"
-            />
-            <path
-              d="M54.4 155.9C56.6 118.8 80.8 96.0 118.0 96.0L440.0 96.0C473.5 96.0 494.0 116.5 494.0 150.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
-              fill="none"
-              stroke="#ffffff"
-              stroke-width="9"
-              stroke-opacity=".95"
-              clip-path="url(#glass-inside)"
-              mask="url(#glass-lower)"
-            />
+            <g clip-path="url(#glass-lower)">
+              <path
+                d="M54.4 155.9C56.6 118.8 80.8 96.0 118.0 96.0L440.0 96.0C473.5 96.0 494.0 116.5 494.0 150.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
+                fill="none"
+                stroke="url(#glass-rim)"
+                stroke-width="4.5"
+              />
+              <path
+                d="M54.4 155.9C56.6 118.8 80.8 96.0 118.0 96.0L440.0 96.0C473.5 96.0 494.0 116.5 494.0 150.0L494.0 222.0C494.0 270.4 485.2 328.3 470.9 374.5L415.9 551.8C408.5 575.5 388.8 590.0 364.0 590.0L72.0 590.0C44.7 590.0 29.0 573.3 30.7 546.1Z"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="9"
+                stroke-opacity=".95"
+                clip-path="url(#glass-inside)"
+              />
+            </g>
           </svg>
           <span class="hero-orb" aria-hidden="true"
             ><svg class="icon"><use href="#i-spark" /></svg
@@ -1722,6 +1712,6 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <script src="assets/script.js"></script>
+    <script src="assets/script.js?v=20261103e"></script>
   </body>
 </html>
