@@ -1,71 +1,63 @@
-# Lê Văn Cảnh — Portfolio
+# Lê Văn Cảnh · Java Full-Stack Developer
 
-Website tĩnh viết bằng HTML, CSS và JavaScript thuần. Không cần Node.js, npm hay bước build, cũng không dùng framework CSS.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=flat-square&logo=githubpages&logoColor=white) ![EN · VI · JA](https://img.shields.io/badge/i18n-EN%20%C2%B7%20VI%20%C2%B7%20JA-6D5DFC?style=flat-square)
 
-## Mở website
+Personal portfolio of a Java Full-Stack Developer based in Ho Chi Minh City, Vietnam.
 
-Mở trực tiếp `index.html` bằng trình duyệt, hoặc chạy trong thư mục này:
+**Live site: [canhle1993.github.io/canhle-portfolio](https://canhle1993.github.io/canhle-portfolio/)**
+
+[![Portfolio preview](docs/preview.webp)](https://canhle1993.github.io/canhle-portfolio/)
+
+## About me
+
+I build ERP systems and web applications with Spring Boot, ReactJS, AWS and REST APIs. Before software, I spent seven years leading a 20-person production line at Samsung, which is where I learned to ship on time and measure results.
+
+- **Aptech Valedictorian 2026:** ADSE program, 93/100 overall
+- **1st place, TechWiz 6 (IoT Ignite track):** BreatheSafe, a real-time air quality system built in 5 days
+- **Production experience:** features used by 50+ people every day in the Nichietsu ERP
+- **Goal:** grow into a backend engineer who designs systems that scale, are secure and keep running
+
+## Featured projects
+
+| Project | What it is | Stack | Links |
+|---|---|---|---|
+| **Multi-Vendor E-Commerce** | Marketplace for buyers, sellers and admins with multi-shop checkout, a money ledger and shipping. ~380 API endpoints. Team Lead, scored 99/100 | Spring Boot, ReactJS | Private, demo on request |
+| **Construction Site ERP** | Construction site module in a live ERP, connected to quotation, warehouse, sales and debt. 50+ daily users, ~40% less manual scheduling | Java full-stack | Company project |
+| **Neural Image Captioning** | Model that writes English captions for photos. ACNPRO-AI capstone, scored 94/100 | Python, PyTorch | Private |
+| **BreatheSafe** | Real-time air quality monitoring from sensors to a web dashboard. 1st place, TechWiz 6 | Raspberry Pi, MongoDB, ThingSpeak | |
+| **PharmaTech** | Pharmaceutical equipment platform with quotes, deposit ordering, Stripe payments, recruitment and real-time chat | Angular, NestJS, MongoDB | [Showcase](https://github.com/canhle1993/PharmaTech-showcase) · [Live demo](http://103.153.72.209:4201/home) |
+| **Library Management** | Desktop app for rentals, QR inventory, audio book descriptions and reports. Team Leader, scored 98/100 | Java Swing, SQL Server | [Showcase](https://github.com/canhle1993/LibraryManagement-showcase) |
+| **Bakerz Bite** | Bakery e-commerce with health-based suggestions, rewards and Power BI admin reports | Laravel, MySQL | [Showcase](https://github.com/canhle1993/Bakerz-showcase) · [Live demo](http://103.153.72.209/filter) |
+
+Full details, screenshots and press coverage are on the [live site](https://canhle1993.github.io/canhle-portfolio/#projects).
+
+## Main skills
+
+- **Backend:** Java, Spring Boot, Spring Security, Hibernate / JPA, REST APIs, Node.js, NestJS
+- **Frontend:** ReactJS, Angular, TypeScript, JavaScript
+- **Database:** MySQL, SQL Server, Oracle, PostgreSQL, MongoDB, Redis
+- **DevOps & cloud:** Docker, GitHub Actions, Linux, Nginx, AWS
+
+The site lists all 58 technologies I have worked with.
+
+## About this site
+
+- Plain HTML, CSS and JavaScript, with no framework and no build step
+- English, Vietnamese and Japanese, switchable at any time and remembered per visitor
+- Glassmorphism design that stays responsive down to small phones
+- Lighter effects on touch devices so it runs smoothly on iPhone Safari
+- Contact form that delivers straight to my inbox through Web3Forms
+
+Run it locally:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-rồi vào http://localhost:8000.
+Then open http://localhost:8000. Maintenance notes (in Vietnamese) are in [docs/maintenance-vi.md](docs/maintenance-vi.md).
 
-Giao diện kính mờ trên nền xám tím. Font Be Vietnam Pro tải từ Google Fonts, logo công nghệ tải từ jsDelivr (Devicon), nên cần Internet. Khi không có mạng, trang dùng font hệ thống và mục công nghệ chỉ còn chữ.
+## Contact
 
-## Ba ngôn ngữ
-
-Mặc định là tiếng Anh. Người xem chuyển bằng nút EN / VI / JA trên thanh đầu trang, và lựa chọn được lưu trên trình duyệt của họ. Link `?lang=vi` mở thẳng bản tiếng Việt, `?lang=ja` mở thẳng bản tiếng Nhật.
-
-- **`index.html`:** chữ tiếng Anh nằm trong thẻ, tiếng Việt ở `data-vi`, tiếng Nhật ở `data-ja` ngay trên thẻ đó. Thuộc tính dùng cặp `data-vi-…` / `data-ja-…` (ví dụ `data-ja-alt`, `data-ja-aria-label`, `data-ja-placeholder`).
-- **`assets/script.js`:** chữ nhiều ngôn ngữ viết dạng `{ en: '...', vi: '...', ja: '...' }`. Thiếu bản nào thì site tự hiện tiếng Anh. Chữ giống nhau ở mọi ngôn ngữ, như tên công nghệ, viết thẳng là được.
-- **Khi sửa nội dung:** nhớ sửa cả ba bản.
-- **Ảnh có chữ:** `project-caption-en.webp` dùng cho tiếng Anh và tiếng Nhật, `project-caption.webp` cho tiếng Việt. `og.jpg` chỉ có tiếng Anh.
-- **Bài báo:** bài gốc đều bằng tiếng Việt; `title.vi` giữ đúng tiêu đề gốc, `title.en` và `title.ja` là bản dịch.
-- **Font tiếng Nhật:** dùng font có sẵn trên máy người xem (Hiragino, Yu Gothic, Meiryo, Noto Sans JP).
-
-## Cấu trúc
-
-- `index.html`: đầu trang, giới thiệu, kỹ năng, hành trình, thành tích, khoảnh khắc, liên hệ.
-- `assets/script.js`: danh sách `projects` và `press` ở đầu file, cùng các tương tác.
-- `assets/style.css`: toàn bộ giao diện. Màu và font nằm trong `:root` ở đầu file.
-- `assets/img/`: ảnh đã nén dùng trên site. `avatar-cutout.webp` là chân dung đã tách nền, `og.jpg` là ảnh hiện ra khi chia sẻ link.
-- `assets/Le-Van-Canh-CV.pdf`: CV để tải về. Thay file mới thì giữ nguyên tên này.
-- `photo/`, `bao-chi/`, `Chứng nhận/`: ảnh và tài liệu gốc, site không dùng trực tiếp. Ảnh chứng nhận đã nén nằm ở `assets/img/cert/`.
-
-## Đang chạy ở đâu
-
-- **GitHub Pages:** https://canhle1993.github.io/canhle-portfolio/ (repo `canhle1993/canhle-portfolio`, nhánh `main`). Mỗi lần push lên `main`, site tự cập nhật sau khoảng 1 phút.
-- **Gắn tên miền `canhle.dev` sau này:**
-  1. Ở nhà cung cấp tên miền, tạo 4 bản ghi `A` cho `@` trỏ về `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`, và bản ghi `CNAME` cho `www` trỏ về `canhle1993.github.io`.
-  2. Trong repo vào Settings > Pages > Custom domain, nhập `canhle.dev`, đợi kiểm tra DNS xong thì bật Enforce HTTPS.
-  3. Các link `canonical`, `og:url`, `og:image` trong `index.html` đã trỏ sẵn tới `https://canhle.dev/`, nên ảnh xem trước khi chia sẻ link sẽ hiện đúng sau khi gắn tên miền.
-
-## Khi đưa lên server
-
-Chỉ cần đưa `index.html` và thư mục `assets/`. Đừng đưa `photo/` (có bảng điểm scan), `bao-chi/`, `Chứng nhận/`, các thư mục `.backup-*`, `.claude/` và `tai-lieu-tham-khao.rtf`.
-
-Nếu demo ShopE chạy ở `canhle.dev/shop-e`, cấu hình server phải giữ đường dẫn này khi đặt portfolio ở thư mục gốc.
-
-## Cập nhật nội dung
-
-**Thêm hoặc sửa dự án:** sửa `projects` trong `assets/script.js`. Link nào chưa có thì bỏ trống, nút tương ứng tự ẩn. Thẻ hiện theo thứ tự trong danh sách, trên lưới 3 cột. `wide: true` cho thẻ rộng gấp đôi; hiện có 2 thẻ rộng và 5 thẻ thường nên lưới vừa khít, thêm hoặc bớt dự án thì chỉnh lại `wide` để không bị lẻ ô. `map` thay ảnh bằng số liệu và sơ đồ, `itemsTitle` đổi tiêu đề danh sách trong chi tiết dự án, `results` thêm bảng kết quả.
-
-**Thêm bài báo:** thêm một mục vào `press` trong `assets/script.js`, ghi đúng tiêu đề và ngày đăng của bài gốc (`date` viết dạng `2026-10-28`, site tự đổi theo ngôn ngữ). Bài báo hiện thành dải cuộn ngang theo thứ tự trong danh sách. Ảnh nên có tỉ lệ 3:2; không có ảnh thì bỏ trống `image`.
-
-**Thêm ảnh:** nén về WebP rộng tối đa khoảng 1600 px, đặt vào `assets/img/`, tên không dấu và viết thường.
-
-**Thêm chứng nhận:** nén ảnh về WebP vào `assets/img/cert/`, rồi chép một thẻ `<li>` trong mục `#certificates` của `index.html` và sửa ảnh, tên, ngày ở cả hai ngôn ngữ. Dải tự nhân đôi và tự chỉnh tốc độ.
-
-**Form liên hệ:** gửi qua Web3Forms (gói Free, 250 tin mỗi tháng), tin nhắn về thẳng `aplevancanh1993@gmail.com`. Access key nằm trong ô ẩn `access_key` của form trong `index.html`; đổi email nhận hoặc xem tin đã gửi tại app.web3forms.com.
-
-**Khôi phục thiết kế xanh lá và vàng:** bản đó nằm trong `.backup-thiet-ke-xanh-vang/`.
-
-## Việc còn chờ bổ sung
-
-- **ShopE, GitHub và live demo:** repo `ShopE-showcase` chưa tồn tại và `canhle.dev` chưa trỏ DNS, nên hai nút này đang tắt. Khi sẵn sàng, bỏ comment hai dòng `live` và `github` của dự án `shope` trong `assets/script.js`.
-- **ShopE, ảnh thật:** `project-shop-e.webp` là ảnh phối cảnh và đang có nhãn đó. Khi có ảnh chụp màn hình thật, thay file và xóa `imageNote`.
-- **Đồ án AI, GitHub:** repo `image_caption_model` đang private nên chưa có nút GitHub. Khi public hoặc có repo showcase, thêm `github` vào dự án `caption` trong `assets/script.js`.
-- **LinkedIn:** thêm một dòng vào `.contact-list` trong `index.html`.
-- **Tên miền:** `canonical` và `og:image` trong `index.html` đang trỏ tới `https://canhle.dev/`. Đổi nếu dùng tên miền khác.
+- Email: [aplevancanh1993@gmail.com](mailto:aplevancanh1993@gmail.com)
+- Portfolio: [canhle1993.github.io/canhle-portfolio](https://canhle1993.github.io/canhle-portfolio/)
+- CV: [Le-Van-Canh-CV.pdf](assets/Le-Van-Canh-CV.pdf)
