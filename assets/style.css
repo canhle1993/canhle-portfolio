@@ -24,7 +24,9 @@
     0 8px 22px rgba(70, 72, 110, 0.07);
   --dark: #0c0d17;
 
-  --font: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, "Noto Sans JP", Arial, sans-serif;
+  --font: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo,
+    "Noto Sans JP", Arial, sans-serif;
 
   --gutter: clamp(12px, 3vw, 32px);
   --gap: clamp(12px, 1.4vw, 18px);
@@ -45,6 +47,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--bar-h) + 24px);
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 html:has(dialog[open]) {
@@ -1197,7 +1200,11 @@ main.stack {
   }
 
   .cert-card .cert-thumb img {
-    background: linear-gradient(140deg, rgba(244, 242, 252, 0.8), rgba(222, 224, 238, 0.6));
+    background: linear-gradient(
+      140deg,
+      rgba(244, 242, 252, 0.8),
+      rgba(222, 224, 238, 0.6)
+    );
     border-radius: var(--r-m);
   }
 
@@ -1243,7 +1250,11 @@ main.stack {
   height: var(--cert-h, 230px);
   overflow: hidden;
   border-radius: var(--r-m);
-  background: linear-gradient(140deg, rgba(244, 242, 252, 0.8), rgba(222, 224, 238, 0.6));
+  background: linear-gradient(
+    140deg,
+    rgba(244, 242, 252, 0.8),
+    rgba(222, 224, 238, 0.6)
+  );
 }
 
 .cert-thumb img {
@@ -1253,7 +1264,6 @@ main.stack {
   object-fit: contain;
   border-radius: 8px;
 }
-
 
 @keyframes marquee {
   to {
@@ -1840,7 +1850,14 @@ main.stack {
   }
 
   .cert-portrait {
-    max-width: 280px;
+    max-width: none;
+  }
+
+  .award > .btn,
+  .cert-portrait .cert-open {
+    width: 100%;
+    min-height: 48px;
+    font-size: 0.9375rem;
   }
 }
 
@@ -2178,9 +2195,10 @@ main.stack {
 
 .foot {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 16px;
-  padding: 12px 8px 18px;
+  padding: 16px 64px 24px;
+  text-align: center;
   font-size: 0.8125rem;
   color: var(--muted);
 }
@@ -2620,6 +2638,18 @@ main.stack {
 }
 
 /* Điện thoại */
+/* Liên kết nhanh trên điện thoại: bỏ vạch ngăn, vị trí xuống dòng riêng */
+@media (max-width: 560px) {
+  .hero-divider {
+    display: none;
+  }
+
+  .hero-loc {
+    flex-basis: 100%;
+    margin-top: 2px;
+  }
+}
+
 @media (max-width: 560px) {
   .nav {
     gap: 6px;
@@ -2788,11 +2818,28 @@ main.stack {
   }
 
   .bg {
-    background:
-      linear-gradient(118deg, transparent 30%, rgba(255, 255, 255, 0.55) 40%, transparent 50%),
-      linear-gradient(118deg, transparent 58%, rgba(255, 255, 255, 0.4) 66%, transparent 74%),
-      radial-gradient(70vw 50vw at 95% 5%, rgba(255, 255, 255, 0.9) 0, transparent 60%),
-      radial-gradient(60vw 50vw at 100% 90%, rgba(214, 206, 246, 0.5) 0, transparent 65%),
+    background: linear-gradient(
+        118deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.55) 40%,
+        transparent 50%
+      ),
+      linear-gradient(
+        118deg,
+        transparent 58%,
+        rgba(255, 255, 255, 0.4) 66%,
+        transparent 74%
+      ),
+      radial-gradient(
+        70vw 50vw at 95% 5%,
+        rgba(255, 255, 255, 0.9) 0,
+        transparent 60%
+      ),
+      radial-gradient(
+        60vw 50vw at 100% 90%,
+        rgba(214, 206, 246, 0.5) 0,
+        transparent 65%
+      ),
       linear-gradient(180deg, #e4e4eb 0%, #dcdde5 55%, #e1e1e8 100%);
   }
 
@@ -2808,7 +2855,12 @@ main.stack {
   }
 
   .panel {
-    background: linear-gradient(170deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 40%), rgba(236, 237, 243, 0.82);
+    background: linear-gradient(
+        170deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0) 40%
+      ),
+      rgba(236, 237, 243, 0.82);
   }
 
   .nav {
