@@ -64,7 +64,7 @@ Nếu demo ShopE chạy ở `canhle.dev/shop-e`, cấu hình server phải giữ
 
 ## Việc còn chờ bổ sung
 
-- **ShopE, GitHub và live demo:** repo `ShopE-showcase` chưa tồn tại và `canhle.dev` chưa trỏ DNS, nên hai nút này đang tắt. Khi sẵn sàng, bỏ comment hai dòng `live` và `github` của dự án `shope` trong `assets/script.js`.
+- **ShopE, live demo:** `canhle.dev` chưa trỏ DNS nên nút demo đang tắt. Khi sẵn sàng, bỏ comment dòng `live` của dự án `shope` trong `assets/script.js`. Nút GitHub đã trỏ tới `ShopE-showcase`.
 - **ShopE, ảnh thật:** `project-shop-e.webp` là ảnh phối cảnh và đang có nhãn đó. Khi có ảnh chụp màn hình thật, thay file và xóa `imageNote`.
 - **Đồ án AI, GitHub:** repo `image_caption_model` đang private nên chưa có nút GitHub. Khi public hoặc có repo showcase, thêm `github` vào dự án `caption` trong `assets/script.js`.
 - **LinkedIn:** thêm một dòng vào `.contact-list` trong `index.html`.

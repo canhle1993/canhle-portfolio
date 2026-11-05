@@ -76,9 +76,9 @@ const projects = [
       ],
     },
     links: {
-      // Bật lại khi sẵn sàng: repo ShopE-showcase chưa tồn tại và canhle.dev chưa trỏ DNS.
+      // Bật lại khi canhle.dev đã trỏ DNS và demo chạy.
       // live: 'https://canhle.dev/shop-e',
-      // github: 'https://github.com/canhle1993/ShopE-showcase',
+      github: 'https://github.com/canhle1993/ShopE-showcase',
     },
   },
   {

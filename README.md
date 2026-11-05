@@ -21,7 +21,7 @@ I build ERP systems and web applications with Spring Boot, ReactJS, AWS and REST
 
 | Project | What it is | Stack | Links |
 |---|---|---|---|
-| **Multi-Vendor E-Commerce** | Marketplace for buyers, sellers and admins with multi-shop checkout, a money ledger and shipping. ~380 API endpoints. Team Lead, scored 99/100 | Spring Boot, ReactJS | Private, demo on request |
+| **Multi-Vendor E-Commerce** | Marketplace for buyers, sellers and admins with multi-shop checkout, a money ledger and shipping. ~380 API endpoints. Team Lead, scored 99/100 | Spring Boot, ReactJS | [Showcase](https://github.com/canhle1993/ShopE-showcase) |
 | **Construction Site ERP** | Construction site module in a live ERP, connected to quotation, warehouse, sales and debt. 50+ daily users, ~40% less manual scheduling | Java full-stack | Company project |
 | **Neural Image Captioning** | Model that writes English captions for photos. ACNPRO-AI capstone, scored 94/100 | Python, PyTorch | Private |
 | **BreatheSafe** | Real-time air quality monitoring from sensors to a web dashboard. 1st place, TechWiz 6 | Raspberry Pi, MongoDB, ThingSpeak | |
