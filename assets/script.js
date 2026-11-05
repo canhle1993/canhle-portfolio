@@ -23,14 +23,13 @@ const projects = [
       ja: '4 学期のプロジェクト・チームリーダー・2026年3月〜6月',
     },
     score: '99/100',
-    image: 'assets/img/project-shop-e.webp',
+    image: 'assets/img/project-shope.webp',
     imageSize: [1600, 800],
     imageAlt: {
-      en: 'Concept image of the Multi-Vendor E-Commerce platform on a phone, laptop and tablet',
-      vi: 'Ảnh phối cảnh nền tảng Multi-Vendor E-Commerce trên điện thoại, laptop và máy bảng',
-      ja: 'スマホ、ノート PC、タブレットに表示した Multi-Vendor E-Commerce のイメージ画像',
+      en: 'SwiftCart storefront in a browser next to the buyer app and the delivery rider app',
+      vi: 'Trang chủ SwiftCart trên trình duyệt, bên cạnh app người mua và app shipper',
+      ja: 'ブラウザの SwiftCart ストアと、購入者アプリ、配達員アプリの画面',
     },
-    imageNote: { en: 'Concept image', vi: 'Ảnh phối cảnh', ja: 'イメージ画像' },
     summary: {
       en: 'A multi-vendor marketplace for buyers, sellers and admins, from multi-shop checkout to the money ledger and shipping.',
       vi: 'Nền tảng thương mại điện tử đa nhà bán cho người mua, người bán và quản trị viên: từ checkout nhiều gian hàng đến sổ cái tiền và vận chuyển.',
