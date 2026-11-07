@@ -46,6 +46,7 @@ The site lists all 58 technologies I have worked with.
 - English, Vietnamese and Japanese, switchable at any time and remembered per visitor
 - Glassmorphism design that stays responsive down to small phones
 - Lighter effects on touch devices so it runs smoothly on iPhone Safari
+- A build animation on the first visit: cursors named after my stack draw each section as you scroll. It's skippable, it's off for reduced motion, and the real content stays in the page for search engines and screen readers. Inspired by [Swarm](https://califa.github.io/swarm-site/) by Joel Califa, written from scratch
 - Contact form that delivers straight to my inbox through Web3Forms
 
 Run it locally:

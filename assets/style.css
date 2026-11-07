@@ -2195,8 +2195,9 @@ main.stack {
 
 .foot {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: 4px 16px;
   padding: 16px 64px 24px;
   text-align: center;
   font-size: 0.8125rem;
@@ -2205,6 +2206,31 @@ main.stack {
 
 .foot p {
   margin: 0;
+}
+
+/* Nút xem lại hiệu ứng dựng trang và dòng ghi nguồn cảm hứng */
+.foot-link {
+  padding: 0;
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.foot-swarm a {
+  color: inherit;
+}
+
+.foot-link:hover,
+.foot-swarm a:hover {
+  color: var(--violet);
+}
+
+.foot-link:not([hidden]) + span::before {
+  content: "· ";
 }
 
 /* Hộp chi tiết dự án */
@@ -2895,5 +2921,242 @@ main.stack {
   *::after {
     animation: none !important;
     transition: none !important;
+  }
+}
+
+/* Hiệu ứng dựng trang (assets/swarm.js). Chỉ có tác dụng khi <html> có class "swarm":
+   phần trang chưa tới lượt và các mảnh chưa dựng được ẩn bằng opacity. */
+html.swarm main > :is(section, footer):not(.sw-open),
+html.swarm .sw-t {
+  opacity: 0 !important;
+}
+
+html.swarm .sw-fade {
+  transition: opacity 0.35s ease !important;
+}
+
+/* Con trỏ đã dựng phần đầu trang nên bỏ hiệu ứng trồi lên lúc tải */
+html:is(.swarm, .swarm-ran) :is(.hero-name, .hero-role, .hero-art) {
+  animation: none;
+}
+
+.sw-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 35;
+  width: 100%;
+  height: 0;
+  pointer-events: none;
+}
+
+.sw-layer > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sw-cur {
+  transition: opacity 0.4s;
+  will-change: transform;
+}
+
+.sw-cur.is-away {
+  opacity: 0;
+}
+
+.sw-cur svg {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  overflow: visible;
+  filter: drop-shadow(0 1px 1.5px rgba(18, 19, 28, 0.3));
+  transition: scale 0.12s;
+}
+
+.sw-cur[data-mode="arrow"] svg {
+  left: -4px;
+  top: -3px;
+  transform-origin: 4px 3px;
+}
+
+.sw-cur:not([data-mode="arrow"]) svg {
+  left: -12px;
+  top: -12px;
+}
+
+.sw-cur.is-down svg {
+  scale: 0.86;
+}
+
+.sw-cur svg > g {
+  display: none;
+}
+
+.sw-cur[data-mode="arrow"] .sw-arrow,
+.sw-cur[data-mode="cross"] .sw-cross,
+.sw-cur[data-mode="beam"] .sw-beam {
+  display: inline;
+}
+
+.sw-arrow path {
+  fill: var(--c);
+  stroke: #fff;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+
+.sw-cross path,
+.sw-beam path {
+  fill: none;
+  stroke: var(--c);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.sw-cur .sw-halo {
+  stroke: #fff;
+  stroke-width: 4.5;
+}
+
+.sw-name {
+  position: absolute;
+  left: 13px;
+  top: 17px;
+  padding: 2px 7px;
+  background: var(--c);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(18, 19, 28, 0.18);
+  color: var(--ct, #fff);
+  font: 600 0.6875rem/1.4 var(--font);
+  white-space: nowrap;
+}
+
+.sw-cur.is-flip .sw-name {
+  left: auto;
+  right: 4px;
+}
+
+/* Dấu + khi đang kéo bản sao */
+.sw-cur.is-copy::after {
+  content: "+";
+  position: absolute;
+  left: 9px;
+  top: -4px;
+  width: 14px;
+  height: 14px;
+  background: var(--c);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1.5px #fff;
+  color: var(--ct, #fff);
+  font: 700 0.6875rem/14px var(--font);
+  text-align: center;
+}
+
+.sw-box {
+  border: 1.5px solid var(--c);
+  background: color-mix(in srgb, var(--c) 8%, transparent);
+  transition: opacity 0.3s;
+}
+
+.sw-box.is-text {
+  border-width: 1px;
+  background: none;
+  opacity: 0.6;
+}
+
+.sw-box.is-ghost {
+  border-style: dashed;
+  background: color-mix(in srgb, var(--c) 12%, transparent);
+}
+
+.sw-box.is-out {
+  opacity: 0;
+}
+
+.sw-size {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 8px);
+  translate: -50% 0;
+  padding: 1px 6px;
+  background: var(--c);
+  border-radius: 4px;
+  color: var(--ct, #fff);
+  font: 600 0.625rem/1.5 var(--font);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.sw-caret {
+  width: 2px;
+  background: var(--c);
+  border-radius: 1px;
+}
+
+.sw-skip {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 41;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px 9px 16px;
+  background: rgba(255, 255, 255, 0.78);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--edge);
+  border-radius: 999px;
+  box-shadow: var(--shadow-s);
+  color: var(--ink);
+  font: 500 0.8125rem/1.2 var(--font);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.25s, transform 0.25s var(--ease), visibility 0.25s;
+}
+
+.sw-skip.is-on {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.sw-skip:hover {
+  color: var(--violet);
+}
+
+.sw-skip kbd {
+  padding: 1px 6px;
+  border: 1px solid var(--hair);
+  border-radius: 5px;
+  color: var(--muted);
+  font: 600 0.6875rem/1.4 var(--font);
+}
+
+@media (hover: none) {
+  .sw-skip kbd {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .sw-skip {
+    left: 14px;
+    bottom: 14px;
+  }
+}
+
+@media print {
+  html.swarm main > *,
+  html.swarm .sw-t {
+    opacity: 1 !important;
+  }
+
+  .sw-layer,
+  .sw-skip {
+    display: none;
   }
 }

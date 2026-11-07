@@ -39,7 +39,24 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
     />
     <link rel="preload" as="image" href="assets/img/avatar-cutout.webp" />
-    <link rel="stylesheet" href="assets/style.css?v=20261105e" />
+    <link rel="stylesheet" href="assets/style.css?v=20261107b" />
+    <script>
+      /* Hiệu ứng dựng trang (assets/swarm.js): chạy ở lần đầu vào trang trong phiên,
+         bỏ qua khi người xem bật giảm chuyển động. Sau 3 giây mà file chưa chạy thì hiện trang bình thường. */
+      (function () {
+        try {
+          var force = /[?&]build(=|&|$)/.test(location.search);
+          if (!force && (matchMedia('(prefers-reduced-motion: reduce)').matches || sessionStorage.getItem('swarm-done'))) return;
+        } catch (e) {
+          return;
+        }
+        var html = document.documentElement;
+        html.classList.add('swarm');
+        setTimeout(function () {
+          if (!window.__swarm) html.classList.remove('swarm');
+        }, 3000);
+      })();
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -715,7 +732,7 @@
               <svg class="icon"><use href="#i-out" /></svg>
             </button>
           </header>
-          <div class="marquee" tabindex="0" aria-label="Technologies I've worked with" data-vi-aria-label="Những công nghệ tôi đã sử dụng" data-ja-aria-label="これまでに使用した技術">
+          <div class="marquee" data-sw="whole" tabindex="0" aria-label="Technologies I've worked with" data-vi-aria-label="Những công nghệ tôi đã sử dụng" data-ja-aria-label="これまでに使用した技術">
             <ul class="tech marquee-track" id="tech-track"></ul>
           </div>
           </div>
@@ -1460,6 +1477,13 @@
 
       <footer class="foot">
         <p>© <span id="year">2026</span> Lê Văn Cảnh · Java Full-Stack Developer</p>
+        <p class="foot-swarm">
+          <button class="foot-link" type="button" id="swarm-replay" data-vi="Xem lại hiệu ứng dựng trang" data-ja="構築アニメーションをもう一度見る">Replay the build animation</button>
+          <span
+            data-vi="Lấy cảm hứng từ <a href='https://califa.github.io/swarm-site/' target='_blank' rel='noopener noreferrer'>Swarm</a> của Joel Califa" data-ja="Joel Califa の <a href='https://califa.github.io/swarm-site/' target='_blank' rel='noopener noreferrer'>Swarm</a> に着想を得ました"
+            >Inspired by <a href="https://califa.github.io/swarm-site/" target="_blank" rel="noopener noreferrer">Swarm</a> by Joel Califa</span
+          >
+        </p>
       </footer>
     </main>
 
@@ -1715,6 +1739,7 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-    <script src="assets/script.js?v=20261105e"></script>
+    <script src="assets/script.js?v=20261107b"></script>
+    <script src="assets/swarm.js?v=20261107b"></script>
   </body>
 </html>
