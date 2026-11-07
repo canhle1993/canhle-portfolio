@@ -812,11 +812,11 @@ main.stack {
   color: rgba(255, 255, 255, 0.85);
 }
 
-/* Thủ khoa: thẻ trắng viền gradient */
+/* Thủ khoa: thẻ trắng viền gradient. Không hẹp hơn 190px để nhãn "Valedictorian" không tràn ra viền */
 .float-bottom {
   right: 0;
   bottom: 12%;
-  width: min(250px, 50%);
+  width: clamp(190px, 50%, 250px);
   padding: 14px 16px 12px;
   background: linear-gradient(#ffffff40, #fff) padding-box,
     linear-gradient(135deg, #a78bff, #5a82f4) border-box;
@@ -2738,10 +2738,11 @@ main.stack {
     font-size: 0.9375rem;
   }
 
+  /* 168px để chữ "Valedictorian" trong nhãn không tràn chạm viền phải của thẻ */
   .float-bottom {
     right: -6px;
     bottom: -14px;
-    width: 148px;
+    width: 168px;
     padding: 8px 10px;
   }
 
