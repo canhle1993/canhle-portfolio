@@ -224,7 +224,7 @@
     const fromY = cur.y;
     const distance = Math.hypot(x - fromX, y - fromY);
     await tween(
-      clamp(distance * 0.3, 100, 340) / speed(),
+      clamp(distance * 0.4, 140, 460) / speed(),
       (p) => place(cur, fromX + (x - fromX) * p, fromY + (y - fromY) * p),
       sec,
       easeInOut
@@ -247,7 +247,7 @@
   function wipe(el, sec) {
     el.style.clipPath = 'inset(0 0 100% 0)';
     reveal(el, false);
-    tween(460 / speed(), (p) => (el.style.clipPath = `inset(0 0 ${(1 - p) * 100}% 0)`), sec).then(() => {
+    tween(600 / speed(), (p) => (el.style.clipPath = `inset(0 0 ${(1 - p) * 100}% 0)`), sec).then(() => {
       el.style.clipPath = '';
     });
   }
@@ -301,7 +301,7 @@
     size.className = 'sw-size';
     box.append(size);
     await tween(
-      clamp(Math.sqrt(r.w * r.h) * 0.5, 160, 380) / speed(),
+      clamp(Math.sqrt(r.w * r.h) * 0.7, 240, 560) / speed(),
       (p) => {
         const w = r.w * p;
         const h = r.h * p;
@@ -318,7 +318,7 @@
       else reveal(el);
     }
     fadeOut(box);
-    await pause(30, sec);
+    await pause(60, sec);
   }
 
   /* Gõ chữ: chữ thật hiện dần theo từng dòng bằng clip-path, con trỏ nhập chữ đi theo */
@@ -337,7 +337,7 @@
     el.style.clipPath = 'inset(0 100% 100% 0)';
     reveal(el, false);
     await tween(
-      clamp(el.textContent.trim().length * 8, 160, 600) / speed(),
+      clamp(el.textContent.trim().length * 12, 240, 900) / speed(),
       (p) => {
         let left = total * p;
         let k = 0;
@@ -360,7 +360,7 @@
     el.style.clipPath = '';
     caret.remove();
     fadeOut(frameBox);
-    await pause(30, sec);
+    await pause(60, sec);
   }
 
   /* Thẻ lặp lại: giữ thẻ mẫu, kéo một bản sao tới chỗ thẻ mới */
@@ -376,7 +376,7 @@
     const dx = to.x - from.x;
     const dy = to.y - from.y;
     await tween(
-      clamp(Math.hypot(dx, dy) * 0.3, 160, 360) / speed(),
+      clamp(Math.hypot(dx, dy) * 0.4, 220, 480) / speed(),
       (p) => {
         const x = from.x + dx * p;
         const y = from.y + dy * p;
@@ -389,7 +389,7 @@
     cur.el.classList.remove('is-down', 'is-copy');
     if (!sec.done) reveal(el);
     fadeOut(ghost);
-    await pause(30, sec);
+    await pause(60, sec);
   }
 
   async function perform(cur, task) {
@@ -538,31 +538,41 @@
     (!task.parent || task.parent.done) &&
     (!task.master || task.master.done);
 
-  /* Nhiều việc đang chờ thì cả đàn làm nhanh hơn, tối đa gấp 2,5 lần */
+  /* Nhiều việc đang chờ thì cả đàn làm nhanh hơn, tối đa gấp 1,8 lần */
   function speed() {
     const ready = queue.reduce((count, task) => count + (isReady(task) ? 1 : 0), 0);
-    return 1 + clamp((ready - 3) / 8, 0, 1.5);
+    return 1 + clamp((ready - 4) / 10, 0, 0.8);
   }
 
   let finished = false;
+  let nextStart = 0;
+  let pumpTimer = 0;
 
-  /* Giao việc theo thứ tự đọc (trên xuống), mỗi việc cho con trỏ rảnh gần nhất */
+  /* Giao việc lần lượt theo thứ tự đọc: trái sang phải, trên xuống dưới. Mỗi việc bắt đầu sau
+     việc trước một nhịp ngắn (phần trang nhiều việc thì nhịp ngắn hơn) và giao cho con trỏ rảnh gần nhất. */
   function pump() {
     if (finished) return;
     for (let i = queue.length - 1; i >= 0; i -= 1) {
       if (queue[i].done || queue[i].sec.done) queue.splice(i, 1);
     }
-    for (const task of queue) {
-      if (!isReady(task)) continue;
-      const free = cursors.filter((cur) => !cur.busy);
-      if (!free.length) break;
-      const r = task.el.getBoundingClientRect();
-      const x = r.left + window.scrollX;
-      const y = r.top + window.scrollY;
-      const cur = free.reduce((best, c) => (Math.hypot(c.x - x, c.y - y) < Math.hypot(best.x - x, best.y - y) ? c : best));
-      run(cur, task);
+    skip.classList.toggle('is-on', cursors.some((cur) => cur.busy) || queue.some(isReady));
+    const task = queue.find(isReady);
+    const free = cursors.filter((cur) => !cur.busy);
+    if (!task || !free.length) return;
+    clearTimeout(pumpTimer);
+    const wait = nextStart - performance.now();
+    if (wait > 0) {
+      pumpTimer = setTimeout(pump, wait);
+      return;
     }
-    skip.classList.toggle('is-on', cursors.some((cur) => cur.busy));
+    const r = task.el.getBoundingClientRect();
+    const x = r.left + window.scrollX;
+    const y = r.top + window.scrollY;
+    const cur = free.reduce((best, c) => (Math.hypot(c.x - x, c.y - y) < Math.hypot(best.x - x, best.y - y) ? c : best));
+    const gap = clamp(2600 / task.sec.tasks.length, 70, 150);
+    nextStart = performance.now() + gap;
+    run(cur, task);
+    pumpTimer = setTimeout(pump, gap);
   }
 
   async function run(cur, task) {
@@ -678,6 +688,7 @@
     document.removeEventListener('keydown', onKey);
     document.removeEventListener('focusin', onFocus);
     window.removeEventListener('scroll', onScroll);
+    clearTimeout(pumpTimer);
     skip.classList.remove('is-on');
     /* Dựng xong cả trang: cả đàn bay quanh chuột thêm một chút rồi mới đi */
     const linger = natural && mouse ? 1600 : 0;

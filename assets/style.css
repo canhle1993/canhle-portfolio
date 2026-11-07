@@ -2208,7 +2208,7 @@ main.stack {
   margin: 0;
 }
 
-/* Nút xem lại hiệu ứng dựng trang và dòng ghi nguồn cảm hứng */
+/* Nút xem lại hiệu ứng dựng trang */
 .foot-link {
   padding: 0;
   background: none;
@@ -2220,17 +2220,8 @@ main.stack {
   cursor: pointer;
 }
 
-.foot-swarm a {
-  color: inherit;
-}
-
-.foot-link:hover,
-.foot-swarm a:hover {
+.foot-link:hover {
   color: var(--violet);
-}
-
-.foot-link:not([hidden]) + span::before {
-  content: "· ";
 }
 
 /* Hộp chi tiết dự án */
